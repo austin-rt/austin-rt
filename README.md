@@ -1,4 +1,8 @@
-### Hi there 👋
+A cameraman turned full-stack developer. I've always been fascinated by the inner workings of gadgets. From converting my vintage bikes into fixies to developing my own film photography, I disassemble and rebuild anything I can get my hands on just to understand how it works.
+
+I am a bridger of gaps. Whether Digital, IRL, or Web3, I have always had a passion for connecting my friends with my friends. Few things in life are as satisfying as being "the guy who knows the perfect person for that."
+
+After a successful tenure in the film industry, I am further cultivating my curiosity and creative spirit by crafting code and connecting communities.
 
 <!--
 **austin-rt/austin-rt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
