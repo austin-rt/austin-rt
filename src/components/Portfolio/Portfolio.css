@@ -13,7 +13,8 @@
   margin-bottom: 1rem;
 }
 
-.portfolio__item:hover {
+.portfolio__item:hover,
+.portfolio__item:focus {
   border-color: var(--color-primary-alt);
   background: transparent;
 }
@@ -33,7 +34,8 @@ color: var(--color-white);
 transition: var(--transition);
 }
 
-.portfolio__item-title>a:hover {
+.portfolio__item-title>a:hover,
+.portfolio__item-title>a:focus {
   color: var(--color-primary)
 }
 

@@ -87,7 +87,8 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--color-white);
 }
 
@@ -102,7 +103,8 @@ a:hover {
   transition: var(--transition);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
@@ -125,7 +127,8 @@ img {
   transition: var(--transition);
 }
 
-.icon:hover{
+.icon:hover,
+.icon:focus {
   color: var(--color-white)
 }
 

@@ -15,7 +15,8 @@ header {
   transition: var(--transition)
 }
 
-.header__name:hover {
+.header__name:hover,
+.header__name:focus {
   color: var(--color-primary);
 }
 
@@ -57,7 +58,8 @@ header {
   width: 100%;
 }
 
-.pfp-container:hover {
+.pfp-container:hover,
+.pfp-container:focus {
   transform: scale(1.05);
 }
 
@@ -80,7 +82,8 @@ header {
   transition: var(--transition);
 }
 
-.scroll__down span:hover {
+.scroll__down span:hover,
+.scroll__down span:focus {
   color: var(--color-white);
 }
 
@@ -96,7 +99,8 @@ header {
   color: var(--color-primary);
 }
 
-.scroll__down__portfolio>h3:hover {
+.scroll__down__portfolio>h3:hover,
+.scroll__down__portfolio>h3:focus {
   color: var(--color-white);
   transform: scale(1.1);
   transform: translateX(1rem)

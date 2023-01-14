@@ -24,7 +24,8 @@ article>a{
   transition: var(--transition);
 }
 
-.contact__option:hover {
+.contact__option:hover,
+.contact__option:focus {
   background: transparent;
   border-color: var(--color-primary-alt);
 }

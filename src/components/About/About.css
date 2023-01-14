@@ -31,7 +31,8 @@ align-items: center;
   transition: var(--transition);
 }
 
-.about__me-pfp:hover {
+.about__me-pfp:hover,
+.about__me-pfp:focus {
   transform: rotate(-5deg);
 }
 

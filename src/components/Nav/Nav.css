@@ -45,7 +45,8 @@ cursor: pointer;
   color: var(--color-light)
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
   background: rgba(0, 0, 0, .3)
 }
 

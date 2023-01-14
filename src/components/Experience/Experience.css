@@ -12,7 +12,8 @@
   transition: var(--transition);
 }
 
-.experience__container>div:hover {
+.experience__container>div:hover,
+.experience__container>div:focus {
   background: transparent;
   border-color: var(--color-primary-alt);
   cursor: default;
