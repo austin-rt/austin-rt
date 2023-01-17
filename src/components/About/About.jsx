@@ -28,11 +28,12 @@ export default function About() {
         <div className='about__content'>
           <p>
             From the lens of a camera to the lines of code, I've always been
-            driven by my passion for understanding what makes things tick. My
-            hands and mind work together, whether I'm tinkering with vintage
-            bikes or developing my own film photography. This curiosity and a
-            desire to connect led me to bridge gaps in the film industry and now
-            in the tech world.
+            driven by my passion for understanding what makes things tick. I
+            bring a unique blend of technical and creative abilities to my work,
+            whether writing code, working on vintage bikes, or shooting and
+            developing my own film photography. This curiosity and a desire to
+            connect led me to bridge gaps in the film industry and now in the
+            tech world.
           </p>
           <p>
             As a design-focused software engineer, I bring my technical skills,
