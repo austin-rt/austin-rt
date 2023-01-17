@@ -1,10 +1,12 @@
 import './Footer.css';
 import { useContext } from 'react';
 import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from 'react-icons/bs';
+import { DiNpm } from 'react-icons/di';
 import { RefContext } from '../../context/RefContext';
 
 export default function Footer() {
-  const { home, about, portfolio, experience, contact, scrollTo } = useContext(RefContext);
+  const { home, about, portfolio, experience, contact, scrollTo } =
+    useContext(RefContext);
   return (
     <footer>
       <h4
@@ -90,6 +92,15 @@ export default function Footer() {
           rel='noopener noreferrer'
         >
           <BsMedium />
+        </a>
+        <a
+          href='https://www.npmjs.com/~austinrt'
+          title='npm Link'
+          target='_blank'
+          className='icon'
+          rel='noopener noreferrer'
+        >
+          <DiNpm />
         </a>
       </div>
 

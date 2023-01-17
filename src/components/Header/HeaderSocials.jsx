@@ -1,4 +1,5 @@
 import { BsGithub, BsLinkedin, BsTwitter, BsMedium } from 'react-icons/bs';
+import { DiNpm } from 'react-icons/di';
 
 export default function HeaderSocials() {
   return (
@@ -38,6 +39,15 @@ export default function HeaderSocials() {
         rel='noopener noreferrer'
       >
         <BsMedium />
+      </a>
+      <a
+        href='https://www.npmjs.com/~austinrt'
+        title='Medium Link'
+        target='_blank'
+        className='icon'
+        rel='noopener noreferrer'
+      >
+        <DiNpm />
       </a>
     </div>
   );
