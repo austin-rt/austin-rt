@@ -42,7 +42,7 @@ export default function HeaderSocials() {
       </a>
       <a
         href='https://www.npmjs.com/~austinrt'
-        title='Medium Link'
+        title='npm Link'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'
