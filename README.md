@@ -29,7 +29,7 @@ curiosity and creative spirit by crafting code and connecting communities.
     <tr>
       <td>Frontend Languages</td>
       <td>
-        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%24722331.svg?&&logo=javascript&logoColor=%23F7DF1E" />
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23323330.svg?&&logo=javascript&logoColor=%23F7DF1E" />
         <img alt="HTML" src="https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&&logo=html5&logoColor=white" />
         <img alt="CSS" src="https://img.shields.io/badge/CSS3%20-%231572B6.svg?&&logo=css3&logoColor=white" />
       </td>
