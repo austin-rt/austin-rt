@@ -4,14 +4,17 @@
 
 <h1 align="center">Hey, I'm Austin!</h1>
 
-A cameraman turned full-stack developer. I've always been fascinated by the
-inner workings of gadgets. From converting my vintage bikes into fixies to
-developing my own film photography, I disassemble and rebuild anything I can get
-my hands on just to understand how it works.
+From the lens of a camera to the lines of code, I've always been driven by my
+passion for understanding what makes things tick. I bring a unique blend of
+technical and creative abilities to my approach, whether writing code, working
+on vintage bikes, or shooting and developing my own film photography. This
+curiosity and a desire to connect led me to bridge gaps in the film industry and
+now in the tech world.
 
-I am a bridger of gaps. Whether Digital, IRL, or Web3, I have always had a
-passion for connecting my friends with my friends. Few things in life are as
-satisfying as being "the guy who knows the perfect person for that."
+As a design-focused software engineer, I bring my technical skills, artistic
+eye, and creative problem-solving to the table in equal measure. My constant
+drive to evolve and passion for mentoring others make me a valuable asset to any
+team.
 
 After a successful tenure in the film industry, I am further cultivating my
 curiosity and creative spirit by crafting code and connecting communities.
