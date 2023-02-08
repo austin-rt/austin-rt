@@ -41,6 +41,8 @@ curiosity and creative spirit by crafting code and connecting communities.
         <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%2320232a.svg?&&logo=redux&logoColor=%7649B8" />
         <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%2320232a.svg?&&logo=vue.js&logoColor=%4FC08D" />
         <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%23000000.svg?&logo=tailwindcss&logoColor=%38BDf8" />
+        <img alt="MaterialUI" src="https://img.shields.io/badge/materialdesign-%23000000.svg?&logo=materialdesign" />
+        <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23000000.svg?&logo=bootstrap" />
         <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
       </td>
     </tr>
