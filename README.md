@@ -29,7 +29,7 @@ curiosity and creative spirit by crafting code and connecting communities.
     <tr>
       <td>Frontend Languages</td>
       <td>
-        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%C9C9C9.svg?&&logo=javascript&logoColor=%23F7DF1E" />
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23323330.svg?&&logo=javascript&logoColor=%23F7DF1E" />
         <img alt="HTML" src="https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&&logo=html5&logoColor=white" />
         <img alt="CSS" src="https://img.shields.io/badge/CSS3%20-%231572B6.svg?&&logo=css3&logoColor=white" />
       </td>
@@ -37,21 +37,20 @@ curiosity and creative spirit by crafting code and connecting communities.
     <tr>
       <td>Frameworks & Libraries</td>
       <td>
-        <img alt="React" src="https://img.shields.io/badge/React.js%20-%C9C9C9.svg?&&logo=react&logoColor=%2361DAFB" />
-        <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%C9C9C9.svg?&&logo=redux&logoColor=%7649B8" />
-        <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%C9C9C9.svg?&&logo=vue.js&logoColor=%4FC08D" />
-        <img alt="NPM" src="https://img.shields.io/badge/npm-%C9C9C9.svg?&logo=npm&logoColor=white" />
-        <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%C9C9C9.svg?&logo=tailwindcss&logoColor=%38BDf8" />
+        <img alt="React" src="https://img.shields.io/badge/React.js%20-%2320232a.svg?&&logo=react&logoColor=%2361DAFB" />
+        <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%2320232a.svg?&&logo=vue.js&logoColor=%4FC08D" />
+        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
+        <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%23000000.svg?&logo=tailwindcss&logoColor=%38BDf8" />
       </td>
     </tr>
       <td>Database & Backend</td>
       <td>
-        <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-%C9C9C9.svg?&logo=express&logoColor=%2361DAFB"/>
-        <img alt="Node" src="https://img.shields.io/badge/Node.js-%C9C9C9.svg?&logo=node.js&logoColor=%339933"/>
+        <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-%23404d59.svg?&logo=express&logoColor=%2361DAFB"/>
+        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
         <img alt="Postgres" src="https://img.shields.io/badge/Postgres-%23316192.svg?&logo=postgresql&logoColor=white">
+        <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%2320232a.svg?&logo=mongodb&logoColor=%47A248">
+        <img alt="Firebase" src="https://img.shields.io/badge/Firebase-%2320232a.svg?&logo=firebase&logoColor=%FFCA2E">
         <img alt="Sequelize" src="https://img.shields.io/badge/Sequelize-%23404d59.svg?&logo=sequelize&logoColor=%52B0E7">
-        <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%C9C9C9.svg?&logo=mongodb&logoColor=%47A248">
-        <img alt="Firebase" src="https://img.shields.io/badge/Firebase-%C9C9C9.svg?&logo=firebase&logoColor=%FFCA2E">
       </td>
     </tr>
     <tr>
