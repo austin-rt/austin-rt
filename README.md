@@ -21,6 +21,8 @@ curiosity and creative spirit by crafting code and connecting communities.
 <a href="https://www.linkedin.com/in/austinrt/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&logo=linkedin&logoColor=white" /></a>
 <a href="https://www.github.com/austin-rt/" target="_blank"> <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" /></a>
 <a href="https://austinrt.medium.com/" target="_blank"> <img alt="Medium" src="https://img.shields.io/badge/medium-%2320232a.svg?&logo=medium" /></a>
+<a href="https://www.npmjs.com/~austinrt" target="_blank"><img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
+</a>
 </p>
 
 <h1 align="center">Technologies</h1>
@@ -39,16 +41,16 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>Frameworks & Libraries</td>
       <td>
         <img alt="React" src="https://img.shields.io/badge/React.js%20-%2320232a.svg?&&logo=react&logoColor=%2361DAFB" />
-        <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%2320232a.svg?&&logo=redux" />
+        <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%2320232a.svg?&&logo=redux&logoColor=%7952B3" />
         <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%2320232a.svg?&&logo=vue.js&logoColor=%4FC08D" />
         <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%23000000.svg?&logo=tailwindcss&logoColor=%38BDf8" />
         <img alt="MaterialUI" src="https://img.shields.io/badge/materialdesign-%23000000.svg?&logo=materialdesign" />
         <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23000000.svg?&logo=bootstrap" />
-        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
       </td>
     </tr>
       <td>Database & Backend</td>
       <td>
+        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
         <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-%23404d59.svg?&logo=express&logoColor=%2361DAFB"/>
         <img alt="Postgres" src="https://img.shields.io/badge/Postgres-%23316192.svg?&logo=postgresql&logoColor=white">
         <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%2320232a.svg?&logo=mongodb&logoColor=%47A248">
@@ -61,8 +63,8 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?&logo=git&logoColor=white" />
         <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" />
-        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
         <img alt="Figma" src="https://img.shields.io/badge/Figma-%2320232a.svg?&logo=figma" />
+        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
       </td>
     </tr>
   </tbody>
