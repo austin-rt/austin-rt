@@ -58,7 +58,7 @@ curiosity and creative spirit by crafting code and connecting communities.
         <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat-square" alt="Node.js Badge">
         <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=2361DAFB&style=flat-square" alt="Express Badge">
         <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=fff&style=flat-square" alt="Sequelize Badge">
-        <img alt="Mongoose Badge" src="https://img.shields.io/badge/Mongoose.js%20-CA4245?logo=%20&style=flat-square">
+        <img alt="Mongoose Badge" src="https://img.shields.io/badge/Mongoose.js%20-890000?logo=%20&style=flat-square">
         <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat-square" alt="Django Badge">
         <img src="https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=flat-square" alt="Flask Badge">
         <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000&style=flat-square" alt="Firebase Badge">
