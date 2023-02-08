@@ -50,7 +50,6 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>Database & Backend</td>
       <td>
         <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-%23404d59.svg?&logo=express&logoColor=%2361DAFB"/>
-        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
         <img alt="Postgres" src="https://img.shields.io/badge/Postgres-%23316192.svg?&logo=postgresql&logoColor=white">
         <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%2320232a.svg?&logo=mongodb&logoColor=%47A248">
         <img alt="Firebase" src="https://img.shields.io/badge/Firebase-%2320232a.svg?&logo=firebase&logoColor=%FFCA2E">
@@ -62,6 +61,7 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?&logo=git&logoColor=white" />
         <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" />
+        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
         <img alt="Figma" src="https://img.shields.io/badge/Figma-%2320232a.svg?&logo=figma" />
       </td>
     </tr>
