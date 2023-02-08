@@ -20,6 +20,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 <p align="center">
 <a href="https://www.linkedin.com/in/austinrt/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&logo=linkedin&logoColor=white" /></a>
 <a href="https://www.github.com/austin-rt/" target="_blank"> <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" /></a>
+<a href="https://www.github.com/austin-rt/" target="_blank"> <img alt="Medium" src="https://img.shields.io/badge/medium-%2320232a.svg?&logo=medium&logoColor=white" /></a>
 </p>
 
 <h1 align="center">Technologies</h1>
