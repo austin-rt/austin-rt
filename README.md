@@ -38,9 +38,10 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>Frameworks & Libraries</td>
       <td>
         <img alt="React" src="https://img.shields.io/badge/React.js%20-%2320232a.svg?&&logo=react&logoColor=%2361DAFB" />
+        <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%2320232a.svg?&&logo=redux&logoColor=%7649B8" />
         <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%2320232a.svg?&&logo=vue.js&logoColor=%4FC08D" />
-        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
         <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%23000000.svg?&logo=tailwindcss&logoColor=%38BDf8" />
+        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
       </td>
     </tr>
       <td>Database & Backend</td>
@@ -58,6 +59,7 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?&logo=git&logoColor=white" />
         <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" />
+        <img alt="Figma" src="https://img.shields.io/badge/Figma-%2320232a.svg?&logo=figma" />
       </td>
     </tr>
   </tbody>
