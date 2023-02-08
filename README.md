@@ -18,10 +18,10 @@ curiosity and creative spirit by crafting code and connecting communities.
 
 <h1 align="center">Let's Connect</h1>
 <p align="center">
-<a href="https://www.linkedin.com/in/austinrt/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&logo=linkedin&logoColor=white" /></a>
-<a href="https://www.github.com/austin-rt/" target="_blank"> <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" /></a>
-<a href="https://austinrt.medium.com/" target="_blank"> <img alt="Medium" src="https://img.shields.io/badge/medium-%2320232a.svg?&logo=medium" /></a>
-<a href="https://www.npmjs.com/~austinrt" target="_blank"><img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
+<a href="https://www.linkedin.com/in/austinrt/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=flat-square" alt="LinkedIn Badge"></a>
+<a href="https://www.github.com/austin-rt/" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square" alt="GitHub Badge"></a>
+<a href="https://austinrt.medium.com/" target="_blank"><img src="https://img.shields.io/badge/Medium-000?logo=medium&logoColor=fff&style=flat-square" alt="Medium Badge"></a>
+<a href="https://www.npmjs.com/~austinrt" target="_blank"><img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat-square" alt="npm Badge">
 </a>
 </p>
 
@@ -30,41 +30,60 @@ curiosity and creative spirit by crafting code and connecting communities.
 <table>
   <tbody>
     <tr>
-      <td>Frontend Languages</td>
+      <td>Languages</td>
       <td>
-        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript%20-%23323330.svg?&&logo=javascript" />
-        <img alt="HTML" src="https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&&logo=html5&logoColor=white" />
-        <img alt="CSS" src="https://img.shields.io/badge/CSS3%20-%231572B6.svg?&&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" alt="JavaScript Badge">
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat-square" alt="TypeScript Badge">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square" alt="HTML5 Badge">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat-square" alt="CSS3 Badge">
+        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat-square" alt="Python Badge">
       </td>
     </tr>
     <tr>
-      <td>Frameworks & Libraries</td>
+      <td>Frontend</td>
       <td>
-        <img alt="React" src="https://img.shields.io/badge/React.js%20-%2320232a.svg?&&logo=react" />
-        <img alt="Redux" src="https://img.shields.io/badge/redux.js%20-%2320232a.svg?&&logo=redux&logoColor=darkorchid" />
-        <img alt="Vue" src="https://img.shields.io/badge/Vue.js%20-%2320232a.svg?&&logo=vue.js&logoColor=%4FC08D" />
-        <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%23000000.svg?&logo=tailwindcss&logoColor=%38BDf8" />
-        <img alt="MaterialUI" src="https://img.shields.io/badge/materialdesign-%23000000.svg?&logo=materialdesign" />
-        <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23000000.svg?&logo=bootstrap" />
+        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square" alt="React Badge">
+        <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=flat-square" alt="Redux Badge">
+        <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=flat-square" alt="Next.js Badge">
+        <img alt="React Router Badge" src="https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat-square">
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat-square" alt="Tailwind CSS Badge">
+        <img src="https://img.shields.io/badge/Material%20UI-007FFF.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAMAAABn0dyjAAABpFBMVEX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8IgZTZAAAAi3RSTlMAAgMEBQYHCAkKCwwNDg8QERIVFxgZGh0fICEiJSYnKCkqLS4vMTI1Njc4Pj9AQ0RGSUpRUlRXWFpeX2hpamxvc3V6foWGiIuMjY%2BYmpyen6CjpKesrbCxs7W4ubq7vMLDxMXGx8rP0dPX2Nrb3N3e3%2BDh4uTl5ufo6ers7e7w8fLz9PX29%2Fj6%2B%2Fz9bRIcnQAAAXBJREFUeNpk0AOXM0EQheEb2%2Fps27aNtW3biHX%2F9E5PxXmO%2B7ytwtgrE5o9HLsC5VEPdjl4Bw0utpEXAFxoYxxrZOHPKdQIfY6TWS2wTZNbKiD3PvoAYX65TErgWCQPJSCnnxqg3B0iK8Ec2SOB0n0DOP23wGrg3F59aVVB7kDWvn%2Fcp5LKSOB6GwZUEL%2F1NcmKwv%2Fr8xJoJMgcx7UuUozch3mlMTgD4MkUNetvbICnGhz7Ugng%2FbCb%2FhGFxrgkAbzvtlLVADh7FboncQksveQWdqqBuNJBTfES4FhVwXh9EP6WoLJ2Qga1heCnOM8CwvJ6Vb76%2ByQA%2B6wKgEst5yDuDVPXd1vyBQkAE3QO2T7z3AjlfGteggrXEsmVD34ogU8H1CTqgkWSP%2FXtphfzVIr%2FUMO9Ts3kY%2BBmP3WjD1DLOkBd%2B6%2B8fPWNFfV87zdZkfgWQbOjiXu3Q%2BXDVRmwA51okHSaKQNOwGSRXebADecCAB9huN3nGl%2FiAAAAAElFTkSuQmCC&style=flat-square" alt="Material UI Badge">
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=flat-square" alt="Bootstrap Badge">
+        <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=flat-square" alt="Vue.js Badge">
       </td>
     </tr>
-      <td>Database & Backend</td>
+    <tr>
+      <td>Backend</td>
       <td>
-        <img alt="Node" src="https://img.shields.io/badge/Node.js-%2320232a.svg?&logo=node.js&logoColor=%339933"/>
-        <img alt="ExpressJS" src="https://img.shields.io/badge/Express.js-%23404d59.svg?&logo=express&logoColor=%2361DAFB"/>
-        <img alt="Postgres" src="https://img.shields.io/badge/Postgres-%23316192.svg?&logo=postgresql&logoColor=white">
-        <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%2320232a.svg?&logo=mongodb&logoColor=%47A248">
-        <img alt="Firebase" src="https://img.shields.io/badge/Firebase-%2320232a.svg?&logo=firebase&logoColor=%FFCA2E">
-        <img alt="Sequelize" src="https://img.shields.io/badge/Sequelize-%23404d59.svg?&logo=sequelize&logoColor=%52B0E7">
+        <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat-square" alt="Node.js Badge">
+        <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=2361DAFB&style=flat-square" alt="Express Badge">
+        <img src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=fff&style=flat-square" alt="Sequelize Badge">
+        <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat-square" alt="Django Badge">
+        <img src="https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=flat-square" alt="Flask Badge">
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000&style=flat-square" alt="Firebase Badge">
+      </td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat-square" alt="PostgreSQL Badge">
+        <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat-square" alt="MongoDB Badge">
+      </td>
+    </tr>
+    <tr>
+      <td>Design Tools</td>
+      <td>
+        <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=fff&style=flat-square" alt="Figma Badge">
+        <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=adobephotoshop&logoColor=fff&style=flat-square" alt="Adobe Photoshop Badge">
+        <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?logo=adobeillustrator&logoColor=fff&style=flat-square" alt="Adobe Illustrator Badge">
       </td>
     </tr>
     <tr>
       <td>Utilities</td>
       <td>
-        <img alt="Git" src="https://img.shields.io/badge/Git-F05032?&logo=git&logoColor=white" />
-        <img alt="Github" src="https://img.shields.io/badge/GitHub-%2320232a.svg?&logo=github&logoColor=white" />
-        <img alt="Figma" src="https://img.shields.io/badge/Figma-%2320232a.svg?&logo=figma" />
-        <img alt="NPM" src="https://img.shields.io/badge/npm-%23000000.svg?&logo=npm&logoColor=white" />
+        <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=flat-square" alt="Git Badge">
+        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square" alt="GitHub Badge">
+        <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat-square" alt="npm Badge">
       </td>
     </tr>
   </tbody>
