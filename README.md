@@ -75,8 +75,8 @@ curiosity and creative spirit by crafting code and connecting communities.
       <td>Design Tools</td>
       <td>
         <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=fff&style=flat-square" alt="Figma Badge">
-        <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=adobephotoshop&logoColor=fff&style=flat-square" alt="Adobe Photoshop Badge">
-        <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?logo=adobeillustrator&logoColor=fff&style=flat-square" alt="Adobe Illustrator Badge">
+        <img src="https://img.shields.io/badge/Photoshop-31A8FF?logo=adobephotoshop&logoColor=fff&style=flat-square" alt="Photoshop Badge">
+        <img src="https://img.shields.io/badge/Illustrator-FF9A00?logo=adobeillustrator&logoColor=fff&style=flat-square" alt="Illustrator Badge">
       </td>
     </tr>
     <tr>
