@@ -10,17 +10,24 @@ export default function Contact() {
   const { contact } = useContext(RefContext);
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault();
 
-    emailjs.sendForm('service_faf1dzf', 'template_29aldcd', form.current, 'c3BNf-OCrtQM_IBtB').then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        'service_faf1dzf',
+        'template_29aldcd',
+        form.current,
+        'c3BNf-OCrtQM_IBtB'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
 
     e.target.reset();
   };
@@ -35,44 +42,41 @@ export default function Contact() {
 
       <div className='container contact__container'>
         <div className='contact__options'>
-          <article className='contact__option'>
-            <MdOutlineEmail className='contact__option-icon icon' />
-            <h4>Email</h4>
+          <a
+            href='mailto:me@austinrt.io?subject=Hi%20Austin!'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <article className='contact__option'>
+              <MdOutlineEmail className='contact__option-icon icon' />
+              <h4>Email</h4>
+              <p>Drop Me A Line</p>
+            </article>
+          </a>
 
-            <a
-              href='mailto:me@austinrt.io'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Drop Me A Line
-            </a>
-          </article>
+          <a
+            href='https://www.linkedin.com/in/austinrt'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <article className='contact__option'>
+              <ImLinkedin className='contact__option-icon icon' />
+              <h4>LinkedIn</h4>
+              <p>Send Me A Message</p>
+            </article>
+          </a>
 
-          <article className='contact__option'>
-            <ImLinkedin className='contact__option-icon icon' />
-            <h4>LinkedIn</h4>
-
-            <a
-              href='https://www.linkedin.com/li/austinrt'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Send Me A Message
-            </a>
-          </article>
-
-          <article className='contact__option'>
-            <FiPhoneCall className='contact__option-icon icon' />
-            <h4>Phone</h4>
-
-            <a
-              href='tel:+12292219699'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Ring Me
-            </a>
-          </article>
+          <a
+            href='tel:+12292219699'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <article className='contact__option'>
+              <FiPhoneCall className='contact__option-icon icon' />
+              <h4>Phone</h4>
+              <p>Ring Me</p>
+            </article>
+          </a>
         </div>
 
         <form

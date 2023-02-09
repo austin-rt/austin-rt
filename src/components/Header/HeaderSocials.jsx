@@ -32,7 +32,7 @@ export default function HeaderSocials() {
         <BsTwitter />
       </a>
       <a
-        href='https://www.medium.com/@austinrt'
+        href='https://austinrt.medium.com/'
         title='Medium Link'
         target='_blank'
         className='icon'

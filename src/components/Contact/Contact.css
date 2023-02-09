@@ -24,24 +24,45 @@ article>a{
   transition: var(--transition);
 }
 
+.contact__option > * {
+  transition: var(--transition);
+}
+
 .contact__option:hover,
 .contact__option:focus {
   background: transparent;
   border-color: var(--color-primary-alt);
+}
+.contact__option:hover > *,
+.contact__option:focus > * {
+  color: var(--color-primary);
 }
 
 .contact__option-icon {
   margin-bottom: .5rem;
 }
 
+.contact__option:hover > .contact__option-icon {
+  color: var(--color-light);
+}
+
 .contact__option h4{
   color: var(--color-white)
+}
+
+.contact__option {
+  color: var(--color-white);
+}
+
+.contact__option p {
+  font-size: .8rem;
 }
 
 .contact__option a {
   margin-top: .7rem;
   display: inline-block;
   font-size: .8rem;
+  color: var(--color-white);
 }
 
 form {

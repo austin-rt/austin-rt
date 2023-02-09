@@ -45,7 +45,7 @@ header {
 }
 
 .pfp-container {
-  background: linear-gradient(var(--color-primary), var(--color-primary-alt), transparent);
+  background: linear-gradient(var(--color-primary), var(--color-primary-alt), rgba(82, 121, 111, 0.08));
   width: 25rem;
   margin: 4rem auto 0 auto;
   border-radius: 2rem;
@@ -113,8 +113,6 @@ header {
     bottom: 9.2rem;
   }
 
-  .pfp-container {}
-
   .scroll__down {
     bottom: 11.6rem;
   }
@@ -148,9 +146,5 @@ header {
   .header__socials,
   .scroll__down {
     display: none;
-  }
-
-  .Typewriter {
-    font-size: 1.07rem;
   }
 }

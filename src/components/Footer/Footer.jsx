@@ -85,7 +85,7 @@ export default function Footer() {
           <BsTwitter />
         </a>
         <a
-          href='https://www.medium.com/@austinrt'
+          href='https://austinrt.medium.com/'
           title='Medium Link'
           target='_blank'
           className='icon'
