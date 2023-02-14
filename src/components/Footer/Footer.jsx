@@ -106,7 +106,7 @@ export default function Footer() {
 
       <div className='footer__copyright'>
         <div>
-          <small>&copy; Austin Taylor 2022.</small>{' '}
+          <small>&copy; Austin Taylor {new Date().getFullYear()}.</small>{' '}
           <small>
             <a
               href='https://github.com/austin-rt/austin-rt.github.io'
