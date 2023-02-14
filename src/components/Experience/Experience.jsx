@@ -1,6 +1,12 @@
 import './Experience.css';
 import { useContext } from 'react';
-import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPython } from 'react-icons/di';
+import {
+  DiHtml5,
+  DiCss3,
+  DiJavascript,
+  DiReact,
+  DiPython
+} from 'react-icons/di';
 import { RiVuejsFill } from 'react-icons/ri';
 import {
   SiDjango,
@@ -12,6 +18,7 @@ import {
   SiFlask,
   SiRedux,
   SiTailwindcss,
+  SiNextdotjs
 } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { MdOutlineLibraryBooks } from 'react-icons/md';
@@ -44,6 +51,11 @@ export default function Experience() {
             <article className='experience__details'>
               <SiTailwindcss className='experience__details-icon icon' />
               <h4 className='experience__details-text'>TailwindCSS</h4>
+            </article>
+
+            <article className='experience__details'>
+              <SiNextdotjs className='experience__details-icon icon' />
+              <h4>Next.js</h4>
             </article>
 
             <article className='experience__details'>

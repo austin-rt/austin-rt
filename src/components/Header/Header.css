@@ -11,13 +11,8 @@ header {
 }
 
 .header__name {
-  color: var(--color-white);
-  transition: var(--transition)
-}
-
-.header__name:hover,
-.header__name:focus {
   color: var(--color-primary);
+  transition: var(--transition)
 }
 
 .call-to-action {

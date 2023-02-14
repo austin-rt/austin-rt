@@ -33,9 +33,15 @@ article>a{
   background: transparent;
   border-color: var(--color-primary-alt);
 }
-.contact__option:hover > *,
-.contact__option:focus > * {
+
+.contact__option:hover > h4,
+.contact__option:focus > h4 {
   color: var(--color-primary);
+}
+
+.contact__option:hover > p,
+.contact__option:focus > p {
+  color: var(--color-white);
 }
 
 .contact__option-icon {
@@ -47,11 +53,11 @@ article>a{
 }
 
 .contact__option h4{
-  color: var(--color-white)
+  color: var(--color-light)
 }
 
 .contact__option {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .contact__option p {
@@ -86,8 +92,13 @@ textarea {
   background: transparent;
   border: 2px solid var(--color-primary-alt);
   resize: none;
-  color: var(--color-white);
+  color: var(--color-primary);
   font-family: "Poppins", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-light);
 }
 
 @media screen and (max-width: 1024px) {

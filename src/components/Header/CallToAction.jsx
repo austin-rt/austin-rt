@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { RefContext } from '../../context/RefContext';
-import Resume from '../../assets/Austin_Taylor-ATS_Resume-2023_01.pdf';
+import Resume from '../../assets/Austin_Taylor-ATS_Resume-2023_02.pdf';
 
 export default function CallToAction() {
   const { contact, scrollTo } = useContext(RefContext);

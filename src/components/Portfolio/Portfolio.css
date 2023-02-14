@@ -30,13 +30,13 @@
 }
 
 .portfolio__item-title>a{
-color: var(--color-white);
+color: var(--color-light);
 transition: var(--transition);
 }
 
 .portfolio__item-title>a:hover,
 .portfolio__item-title>a:focus {
-  color: var(--color-primary)
+  color: var(--color-white)
 }
 
 .portfolio__item h3 {
