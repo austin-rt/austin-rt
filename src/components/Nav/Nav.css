@@ -37,6 +37,7 @@ cursor: pointer;
   color: var(--color-light);
   font-size: 1rem;
   margin: 0 auto;
+  transition: var(--transition);
 }
 
 .nav__text {

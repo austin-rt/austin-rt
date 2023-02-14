@@ -25,6 +25,15 @@ footer li, footer h4 {
   gap: 2rem;
   margin: 0 auto 3rem;
 }
+.permalinks > * {
+  transition: var(--transition);
+}
+
+.permalinks > *:hover,
+.permalinks > *:focus
+{
+  color: var(--color-white);
+}
 
 .footer__socials {
   display: flex;
