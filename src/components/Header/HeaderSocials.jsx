@@ -1,12 +1,13 @@
 import { BsGithub, BsLinkedin, BsTwitter, BsMedium } from 'react-icons/bs';
 import { DiNpm } from 'react-icons/di';
+import { FaDev } from 'react-icons/fa';
 
 export default function HeaderSocials() {
   return (
     <div className='header__socials'>
       <a
         href='https://www.github.com/austin-rt'
-        title='GitHub Link'
+        title='GitHub Profile'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'
@@ -15,7 +16,7 @@ export default function HeaderSocials() {
       </a>
       <a
         href='https://www.linkedin.com/in/austinrt'
-        title='LinkedIn Link'
+        title='LinkedIn Profile'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'
@@ -24,7 +25,7 @@ export default function HeaderSocials() {
       </a>
       <a
         href='https://www.twitter.com/0xStink'
-        title='Twitter Link'
+        title='Twitter Profile'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'
@@ -33,7 +34,7 @@ export default function HeaderSocials() {
       </a>
       <a
         href='https://austinrt.medium.com/'
-        title='Medium Link'
+        title='Medium Profile'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'
@@ -41,8 +42,17 @@ export default function HeaderSocials() {
         <BsMedium />
       </a>
       <a
+        href='https://dev.to/austinrt'
+        title='Dev.to Profile'
+        target='_blank'
+        className='icon'
+        rel='noopener noreferrer'
+      >
+        <FaDev />
+      </a>
+      <a
         href='https://www.npmjs.com/~austinrt'
-        title='npm Link'
+        title='npm Profile'
         target='_blank'
         className='icon'
         rel='noopener noreferrer'

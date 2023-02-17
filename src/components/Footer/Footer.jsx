@@ -2,6 +2,7 @@ import './Footer.css';
 import { useContext } from 'react';
 import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from 'react-icons/bs';
 import { DiNpm } from 'react-icons/di';
+import { FaDev } from 'react-icons/fa';
 import { RefContext } from '../../context/RefContext';
 
 export default function Footer() {
@@ -92,6 +93,15 @@ export default function Footer() {
           rel='noopener noreferrer'
         >
           <BsMedium />
+        </a>
+        <a
+          href='https://dev.to/austinrt'
+          title='Dev.to Profile'
+          target='_blank'
+          className='icon'
+          rel='noopener noreferrer'
+        >
+          <FaDev />
         </a>
         <a
           href='https://www.npmjs.com/~austinrt'

@@ -61,7 +61,7 @@ transition: var(--transition);
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1340px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
