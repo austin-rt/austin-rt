@@ -16,9 +16,13 @@ header {
 }
 
 .header__theme-slider {
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .header__theme-slider__toggle{
@@ -30,11 +34,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
   background: var(--color-primary);
   transition: var(--transition);
-  position: relative;
-  z-index: -1;
 }
 
 .header__theme-slider__selector{
@@ -42,15 +43,9 @@ header {
   height: calc(2rem*0.8);
   border-radius: 50%;
   position: relative;
-  right: -1.80rem;
-  /* right: -3.80rem; */
-  z-index: 0;
+  right: -3.8rem;
   background: var(--color-white);
   transition: var(--transition);
-}
-
-.header_theme-slider__toggle svg{
-  z-index: 1;
 }
 
 .call-to-action {
