@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/github-banner-1.png" alt="austin-camping">
+<img src="images/github-banner.png" alt="austin" width="600">
 </p>
 
 <h1 align="center">Hey, I'm Austin!</h1>
