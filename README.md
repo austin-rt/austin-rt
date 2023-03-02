@@ -81,6 +81,8 @@ curiosity and creative spirit by crafting code and connecting communities.
         />
       </picture>
     </td>
+    <br />
+    <br />
     <td>
       <picture>
         <source
