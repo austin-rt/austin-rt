@@ -44,6 +44,12 @@ curiosity and creative spirit by crafting code and connecting communities.
       alt="Medium Badge"
   /></a>
   <a
+    href="https://dev.to/austinrt"
+    target="_blank"
+    ><img
+    src="https://img.shields.io/badge/dev.to-0A0A0A?logo=devdotto&logoColor=fff&style=flat"
+    alt="dev.to Badge"></a>
+  <a
     href="https://www.npmjs.com/~austinrt"
     target="_blank"
     ><img
