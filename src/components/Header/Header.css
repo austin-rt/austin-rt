@@ -16,6 +16,7 @@ header {
 }
 
 .header__theme-slider {
+  color: var(--color-bg);
   position: absolute;
   right: 0;
   top: 0;
@@ -39,6 +40,9 @@ header {
 }
 
 .header__theme-slider__selector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(2rem*0.8);
   height: calc(2rem*0.8);
   border-radius: 50%;

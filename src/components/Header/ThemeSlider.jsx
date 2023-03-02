@@ -8,8 +8,7 @@ const ThemeSlider = () => {
   const [theme, setTheme] = useState('light');
 
   const changeTheme = e => {
-    if (e && e.type === 'keydown' && e.key !== 'Enter')
-      return;
+    if (e && e.type === 'keydown' && e.key !== 'Enter') return;
     switch (theme) {
       case 'dark':
         setTheme('light');
@@ -25,7 +24,7 @@ const ThemeSlider = () => {
   useEffect(() => {
     switch (theme) {
       case 'dark':
-        slider.current.style.right = '-3.8rem';
+        slider.current.style.right = '-1.8rem';
         document.documentElement.style.setProperty(
           '--color-bg',
           STYLES.light.bg
@@ -54,7 +53,7 @@ const ThemeSlider = () => {
           'url(../src/assets/bg-texture-2.png)';
         break;
       case 'light':
-        slider.current.style.right = '-1.8rem';
+        slider.current.style.right = '-3.8rem';
         document.documentElement.style.setProperty(
           '--color-bg',
           STYLES.dark.bg
@@ -96,10 +95,21 @@ const ThemeSlider = () => {
       }}
       title='dark mode slider'
     >
-      <i
-        className='header__theme-slider__selector'
-        ref={slider}
-      />
+      {theme === 'light' ? (
+        <i
+          ref={slider}
+          className='header__theme-slider__selector'
+        >
+          <FiMoon />
+        </i>
+      ) : (
+        <i
+          ref={slider}
+          className='header__theme-slider__selector'
+        >
+          <FiSun />
+        </i>
+      )}
       <div className='header__theme-slider__toggle'>
         <FiSun />
         <FiMoon />
