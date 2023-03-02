@@ -1,5 +1,5 @@
 nav {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(255, 255, 255, .1);
   width: max-content;
   padding: 0.7rem 1.7rem;
   z-index: 2;
@@ -34,7 +34,7 @@ cursor: pointer;
   padding: .25rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: var(--color-primary);
   font-size: 1rem;
   margin: 0 auto;
   transition: var(--transition);
