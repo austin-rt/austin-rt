@@ -7,7 +7,9 @@ const ThemeSlider = () => {
   const slider = useRef(null);
   const [theme, setTheme] = useState('light');
 
-  const changeTheme = () => {
+  const changeTheme = e => {
+    if (e && e.type === 'keydown' && e.key !== 'Enter')
+      return;
     switch (theme) {
       case 'dark':
         setTheme('light');
@@ -88,6 +90,11 @@ const ThemeSlider = () => {
     <div
       className='header__theme-slider'
       onClick={changeTheme}
+      tabIndex={0}
+      onKeyDown={e => {
+        changeTheme(e);
+      }}
+      title='dark mode slider'
     >
       <i
         className='header__theme-slider__selector'
