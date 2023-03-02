@@ -20,6 +20,12 @@ footer li, footer h4 {
   font-weight: 500;
   margin-bottom: 1rem;
   display: inline-block;
+  transition: var(--transition);
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+  color: var(--color-white);
 }
 
 .permalinks {
