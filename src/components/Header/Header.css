@@ -15,6 +15,44 @@ header {
   transition: var(--transition)
 }
 
+.header__theme-slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__theme-slider__toggle{
+  color: var(--color-bg);
+  width: 4rem;
+  height: 2rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: var(--color-primary);
+  transition: var(--transition);
+  position: relative;
+  z-index: -1;
+}
+
+.header__theme-slider__selector{
+  width: calc(2rem*0.8);
+  height: calc(2rem*0.8);
+  border-radius: 50%;
+  position: relative;
+  right: -1.80rem;
+  /* right: -3.80rem; */
+  z-index: 0;
+  background: var(--color-white);
+  transition: var(--transition);
+}
+
+.header_theme-slider__toggle svg{
+  z-index: 1;
+}
+
 .call-to-action {
   margin-top: 2.5rem;
   display: flex;
