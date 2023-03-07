@@ -227,6 +227,7 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark&icon_color=5ED6F8&ring_color=5ED6F8"
         />
       </picture>
+      <br />
       <picture>
         <source
           srcset="
@@ -244,6 +245,7 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=dark"
         />
       </picture>
+      <br />
       <picture>
         <source
           srcset="
@@ -261,6 +263,7 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=dark"
         />
       </picture>
+      <br />
     <picture>
     <source
           srcset="
