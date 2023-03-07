@@ -1,5 +1,4 @@
-<main style="text-align: center">
-<p>
+<p align="center">
 <img src="images/github-banner.png" alt="austin">
 </p>
 
@@ -22,8 +21,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 
 </div>
 
-<h1>Let's Connect</h1>
-<p style="text-align: center">
+<h2 align="center">Let's Connect</h2>
   <a
     href="https://www.linkedin.com/in/austinrt/"
     target="_blank"
@@ -59,9 +57,8 @@ curiosity and creative spirit by crafting code and connecting communities.
       alt="npm Badge"
     />
   </a>
-</p>
 <br />
-<h1>Technologies</h1>
+<h2>Technologies</h1>
 <table style="text-align: left">
   <tbody>
     <tr>
@@ -212,7 +209,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 </table>
 <hr />
 
-<h1>GitHub Stats</h1>
+<h2>GitHub Stats</h2>
 <p>
   <tr>
     <td>
@@ -301,4 +298,3 @@ curiosity and creative spirit by crafting code and connecting communities.
 </p>
 <br />
 <br />
-</main>
