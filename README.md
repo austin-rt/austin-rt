@@ -23,39 +23,39 @@ curiosity and creative spirit by crafting code and connecting communities.
 </div>
 
 <h1>Let's Connect</h1>
-<p>
+<p style="text-align: center">
   <a
     href="https://www.linkedin.com/in/austinrt/"
     target="_blank"
     ><img
-      src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=flat-square"
+      src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=for-the-badge"
       alt="LinkedIn Badge"
   /></a>
   <a
     href="https://www.github.com/austin-rt/"
     target="_blank"
     ><img
-      src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square"
+      src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge"
       alt="GitHub Badge"
   /></a>
   <a
     href="https://austinrt.medium.com/"
     target="_blank"
     ><img
-      src="https://img.shields.io/badge/Medium-000?logo=medium&logoColor=fff&style=flat-square"
+      src="https://img.shields.io/badge/Medium-000?logo=medium&logoColor=fff&style=for-the-badge"
       alt="Medium Badge"
   /></a>
   <a
     href="https://dev.to/austinrt"
     target="_blank"
     ><img
-    src="https://img.shields.io/badge/dev.to-0A0A0A?logo=devdotto&logoColor=fff&style=flat"
+    src="https://img.shields.io/badge/dev.to-0A0A0A?logo=devdotto&logoColor=fff&style=for-the-badge"
     alt="dev.to Badge"></a>
   <a
     href="https://www.npmjs.com/~austinrt"
     target="_blank"
     ><img
-      src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat-square"
+      src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge"
       alt="npm Badge"
     />
   </a>
@@ -217,7 +217,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 <p>
   <tr>
     <td>
-      <picture style="margin: 0 auto">
+      <picture>
         <source
           srcset="
             https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=light
@@ -238,7 +238,7 @@ curiosity and creative spirit by crafting code and connecting communities.
     <br />
     <br />
     <td>
-      <picture style="margin: 0 auto">
+      <picture>
         <source
           srcset="
             https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=light
@@ -259,7 +259,7 @@ curiosity and creative spirit by crafting code and connecting communities.
     <br>
     <br>
     <td>
-      <picture style="margin: 0 auto">
+      <picture>
         <source
           srcset="
             https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=light
@@ -280,7 +280,7 @@ curiosity and creative spirit by crafting code and connecting communities.
     <br>
     <br>
     <td>
-    <picture style="margin: 0 auto">
+    <picture>
     <source
           srcset="
             https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&bg_color=ffffff&color=000000&theme=react
