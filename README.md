@@ -2,8 +2,7 @@
 <img src="images/github-banner.png" alt="austin">
 </p>
 
-<h1>Hey, I'm Austin!</h1>
-<div style="font-size: 1.1rem; text-align: left">
+<h1 align="center">Hey, I'm Austin!</h1>
 From the lens of a camera to the lines of code, I've always been driven by my
 passion for understanding what makes things tick. I bring a unique blend of
 technical and creative abilities to my approach, whether writing code, working
@@ -19,9 +18,8 @@ team.
 After a successful tenure in the film industry, I am further cultivating my
 curiosity and creative spirit by crafting code and connecting communities.
 
-</div>
-
 <h2 align="center">Let's Connect</h2>
+<p align="center">
   <a
     href="https://www.linkedin.com/in/austinrt/"
     target="_blank"
@@ -57,9 +55,10 @@ curiosity and creative spirit by crafting code and connecting communities.
       alt="npm Badge"
     />
   </a>
+</p>
 <br />
-<h2>Technologies</h1>
-<table style="text-align: left">
+<h2 align="center">Technologies</h1>
+<table>
   <tbody>
     <tr>
       <td>Languages</td>
@@ -208,9 +207,9 @@ curiosity and creative spirit by crafting code and connecting communities.
   </tbody>
 </table>
 <hr />
-
-<h2>GitHub Stats</h2>
-<p>
+<br />
+<h2 align="center">GitHub Stats</h2>
+<p align="center">
   <tr>
     <td>
       <picture>
