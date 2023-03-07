@@ -226,7 +226,7 @@ curiosity and creative spirit by crafting code and connecting communities.
           media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
         />
         <img
-          src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark"
+          src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark&icon_color=5ED6F8&ring_color=5ED6F8"
         />
       </picture>
     </td>
