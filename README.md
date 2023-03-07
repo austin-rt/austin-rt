@@ -209,9 +209,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 <hr />
 <br />
 <h2 align="center">GitHub Stats</h2>
-<p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-  <tr>
-    <td>
+<p align="center">
       <picture>
         <source
           srcset="
@@ -229,10 +227,6 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark&icon_color=5ED6F8&ring_color=5ED6F8"
         />
       </picture>
-    </td>
-    <br />
-    <br />
-    <td>
       <picture>
         <source
           srcset="
@@ -250,10 +244,6 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=dark"
         />
       </picture>
-    </td>
-    <br>
-    <br>
-    <td>
       <picture>
         <source
           srcset="
@@ -271,10 +261,6 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=dark"
         />
       </picture>
-    </td>
-    <br>
-    <br>
-    <td>
     <picture>
     <source
           srcset="
@@ -292,8 +278,4 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&theme=react-dark"
         />
     </picture>
-    </td>
-  </tr>
 </p>
-<br />
-<br />
