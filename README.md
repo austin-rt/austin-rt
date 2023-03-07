@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/github-banner.png" alt="austin" width="600">
+<img src="images/github-banner.png" alt="austin">
 </p>
 
 <h1 align="center">Hey, I'm Austin!</h1>
@@ -21,7 +21,6 @@ curiosity and creative spirit by crafting code and connecting communities.
 
 <h1 align="center">Let's Connect</h1>
 <p align="center">
-   
   <a
     href="https://www.linkedin.com/in/austinrt/"
     target="_blank"
@@ -58,53 +57,6 @@ curiosity and creative spirit by crafting code and connecting communities.
     />
   </a>
 </p>
-<br />
-<h1 align="center">GitHub Stats</h1>
-<p align="center">
-  <tr>
-    <td>
-      <picture>
-        <source
-          srcset="
-            https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&bg_color=d9d9d9&border_color=354f52&title_color=354f52&icon_color=354f52&text_color=354f52
-          "
-          media="(prefers-color-scheme: light)"
-        />
-        <source
-          srcset="
-            https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&bg_color=2f3e46&border_color=cad2c599&title_color=84a98c&icon_color=84a98c&text_color=84a98c
-          "
-          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&bg_color=2f3e46&border_color=cad2c599&title_color=84a98c&icon_color=84a98c&text_color=84a98c"
-        />
-      </picture>
-    </td>
-    <br />
-    <br />
-    <td>
-      <picture>
-        <source
-          srcset="
-            https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&bg_color=d9d9d9&border_color=354f52&title_color=354f52&icon_color=354f52&text_color=354f52
-          "
-          media="(prefers-color-scheme: light)"
-        />
-        <source
-          srcset="
-            https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&bg_color=2f3e46&border_color=cad2c599&title_color=84a98c&icon_color=84a98c&text_color=84a98c
-          "
-          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&bg_color=2f3e46&border_color=cad2c599&title_color=84a98c&icon_color=84a98c&text_color=84a98c"
-        />
-      </picture>
-    </td>
-  </tr>
-</p>
-<br />
 <br />
 <h1 align="center">Technologies</h1>
 <table>
@@ -254,4 +206,94 @@ curiosity and creative spirit by crafting code and connecting communities.
   </tbody>
 </table>
 <hr />
+<br />
+
+<h1 align="center">GitHub Stats</h1>
+<p align="center">
+  <tr>
+    <td>
+      <picture>
+        <source
+          srcset="
+            https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=light
+          "
+          media="(prefers-color-scheme: light)"
+        />
+        <source
+          srcset="
+            https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark&icon_color=5ED6F8&ring_color=5ED6F8
+          "
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark"
+        />
+      </picture>
+    </td>
+    <br />
+    <br />
+    <td>
+      <picture>
+        <source
+          srcset="
+            https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=light
+          "
+          media="(prefers-color-scheme: light)"
+        />
+        <source
+          srcset="
+            https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=dark
+          "
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=dark"
+        />
+      </picture>
+    </td>
+    <br>
+    <br>
+    <td>
+      <picture>
+        <source
+          srcset="
+            https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=light
+          "
+          media="(prefers-color-scheme: light)"
+        />
+        <source
+          srcset="
+            https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=dark
+          "
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        />
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=dark"
+        />
+      </picture>
+    </td>
+    <br>
+    <br>
+    <td>
+    <picture>
+    <source
+          srcset="
+            https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&bg_color=ffffff&color=000000&theme=react
+          "
+          media="(prefers-color-scheme: light)"
+        />
+        <source
+          srcset="
+            https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&theme=react-dark
+          "
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        />
+        <img
+          src="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&theme=react-dark"
+        />
+    </picture>
+    </td>
+  </tr>
+</p>
+<br />
 <br />
