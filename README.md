@@ -209,7 +209,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 <hr />
 <br />
 <h2 align="center">GitHub Stats</h2>
-<p align="center">
+<p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
   <tr>
     <td>
       <picture>
