@@ -211,7 +211,6 @@ curiosity and creative spirit by crafting code and connecting communities.
   </tbody>
 </table>
 <hr />
-<br />
 
 <h1>GitHub Stats</h1>
 <p>
