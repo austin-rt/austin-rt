@@ -42,7 +42,6 @@ body {
   background-color: var(--color-bg);
   background-image: var(--bg-image);
   transition: background-color 400ms ease;
-  transition: color 400ms ease;
 }
 
 .container {
