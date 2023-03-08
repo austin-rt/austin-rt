@@ -5,7 +5,7 @@ import { DiNpm } from 'react-icons/di';
 import { FaDev } from 'react-icons/fa';
 import { RefContext } from '../../context/RefContext';
 
-export default function Footer() {
+const Footer = () => {
   const { home, about, portfolio, experience, contact, scrollTo } =
     useContext(RefContext);
   return (
@@ -144,4 +144,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

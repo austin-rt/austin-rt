@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { RefContext } from '../../context/RefContext';
 import { portfolioItems } from './portfolioItems';
 
-export default function Portfolio() {
+const Portfolio = () => {
   const { portfolio } = useContext(RefContext);
   return (
     <section
@@ -72,4 +72,6 @@ export default function Portfolio() {
       </div>
     </section>
   );
-}
+};
+
+export default Portfolio;

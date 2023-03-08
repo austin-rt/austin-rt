@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin, BsTwitter, BsMedium } from 'react-icons/bs';
 import { DiNpm } from 'react-icons/di';
 import { FaDev } from 'react-icons/fa';
 
-export default function HeaderSocials() {
+const HeaderSocials = () => {
   return (
     <div className='header__socials'>
       <a
@@ -61,4 +61,6 @@ export default function HeaderSocials() {
       </a>
     </div>
   );
-}
+};
+
+export default HeaderSocials;

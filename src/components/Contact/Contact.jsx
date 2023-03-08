@@ -6,7 +6,7 @@ import { ImLinkedin } from 'react-icons/im';
 import { FiPhoneCall } from 'react-icons/fi';
 import { RefContext } from '../../context/RefContext';
 
-export default function Contact() {
+const Contact = () => {
   const { contact } = useContext(RefContext);
   const form = useRef();
 
@@ -111,4 +111,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;

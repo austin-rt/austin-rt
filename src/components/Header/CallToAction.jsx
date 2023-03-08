@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { RefContext } from '../../context/RefContext';
 import Resume from '../../assets/Austin_Taylor-ATS_Resume-2023_02.pdf';
 
-export default function CallToAction() {
+const CallToAction = () => {
   const { contact, scrollTo } = useContext(RefContext);
   return (
     <div className='call-to-action'>
@@ -23,4 +23,6 @@ export default function CallToAction() {
       </div>
     </div>
   );
-}
+};
+
+export default CallToAction;

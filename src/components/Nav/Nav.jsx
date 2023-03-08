@@ -7,8 +7,9 @@ import { BiBook } from 'react-icons/bi';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { RefContext } from '../../context/RefContext';
 
-export default function Nav() {
-  const { home, about, portfolio, experience, contact, scrollTo } = useContext(RefContext);
+const Nav = () => {
+  const { home, about, portfolio, experience, contact, scrollTo } =
+    useContext(RefContext);
   const [activeNav, setActiveNav] = useState('#');
 
   return (
@@ -35,7 +36,9 @@ export default function Nav() {
           scrollTo(about);
         }}
       >
-        <div className={activeNav === '#about' ? 'active nav__link' : 'nav__link'}>
+        <div
+          className={activeNav === '#about' ? 'active nav__link' : 'nav__link'}
+        >
           <AiOutlineUser
             className='nav__icon'
             title='about'
@@ -50,7 +53,11 @@ export default function Nav() {
           scrollTo(portfolio);
         }}
       >
-        <div className={activeNav === '#portfolio' ? 'active nav__link' : 'nav__link'}>
+        <div
+          className={
+            activeNav === '#portfolio' ? 'active nav__link' : 'nav__link'
+          }
+        >
           <BsFillBriefcaseFill
             className='nav__icon'
             title='portfolio'
@@ -65,7 +72,11 @@ export default function Nav() {
           scrollTo(experience);
         }}
       >
-        <div className={activeNav === '#experience' ? 'active nav__link' : 'nav__link'}>
+        <div
+          className={
+            activeNav === '#experience' ? 'active nav__link' : 'nav__link'
+          }
+        >
           <BiBook
             className='nav__icon'
             title='experience'
@@ -80,7 +91,11 @@ export default function Nav() {
           scrollTo(contact);
         }}
       >
-        <div className={activeNav === '#contact' ? 'active nav__link' : 'nav__link'}>
+        <div
+          className={
+            activeNav === '#contact' ? 'active nav__link' : 'nav__link'
+          }
+        >
           <AiTwotoneMail
             className='nav__icon'
             title='contact'
@@ -90,4 +105,6 @@ export default function Nav() {
       </div>
     </nav>
   );
-}
+};
+
+export default Nav;

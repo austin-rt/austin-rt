@@ -24,7 +24,7 @@ import { FaNodeJs } from 'react-icons/fa';
 import { MdOutlineLibraryBooks } from 'react-icons/md';
 import { RefContext } from '../../context/RefContext';
 
-export default function Experience() {
+const Experience = () => {
   const { experience } = useContext(RefContext);
   return (
     <section
@@ -137,4 +137,6 @@ export default function Experience() {
       </div>
     </section>
   );
-}
+};
+
+export default Experience;

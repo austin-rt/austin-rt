@@ -6,7 +6,7 @@ import HeaderSocials from './HeaderSocials';
 import pfp from '../../assets/2023-headshot-no-bg.png';
 import ThemeSlider from './ThemeSlider';
 
-export default function Header() {
+const Header = () => {
   const { home, portfolio, contact, scrollTo } = useContext(RefContext);
   return (
     <header ref={home}>
@@ -96,4 +96,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

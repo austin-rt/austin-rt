@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { RefContext } from '../../context/RefContext';
 import aboutMe from '../../assets/about-me.png';
 
-export default function About() {
+const About = () => {
   const { about, contact, scrollTo } = useContext(RefContext);
   return (
     <section
@@ -60,4 +60,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;
