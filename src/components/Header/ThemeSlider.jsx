@@ -5,11 +5,12 @@ import { STYLES } from '../../utils/constants';
 
 const ThemeSlider = () => {
   const slider = useRef(null);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const changeTheme = e => {
     if (e && e.type === 'keydown' && e.key !== 'Enter') return;
     switch (theme) {
+      case undefined:
       case 'dark':
         setTheme('light');
         break;
@@ -23,7 +24,7 @@ const ThemeSlider = () => {
 
   useEffect(() => {
     switch (theme) {
-      case 'dark':
+      case 'light':
         slider.current.style.right = '-1.8rem';
         document.documentElement.style.setProperty(
           '--color-bg',
@@ -49,10 +50,12 @@ const ThemeSlider = () => {
           '--color-light',
           STYLES.light.light
         );
-        document.body.style.backgroundImage =
-          'url(../src/assets/bg-texture-2.png)';
+        document.documentElement.style.setProperty(
+          '--bg-image',
+          STYLES.light.bgImage
+        );
         break;
-      case 'light':
+      case 'dark':
         slider.current.style.right = '-3.8rem';
         document.documentElement.style.setProperty(
           '--color-bg',
@@ -78,7 +81,10 @@ const ThemeSlider = () => {
           '--color-light',
           STYLES.dark.light
         );
-        document.body.style.backgroundImage = '';
+        document.documentElement.style.setProperty(
+          '--bg-image',
+          STYLES.dark.bgImage
+        );
         break;
       default:
         break;
@@ -95,7 +101,7 @@ const ThemeSlider = () => {
       }}
       title='dark mode slider'
     >
-      {theme === 'light' ? (
+      {theme === 'dark' ? (
         <i
           ref={slider}
           className='header__theme-slider__selector'

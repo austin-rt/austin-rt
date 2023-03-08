@@ -8,6 +8,8 @@
   --color-white: rgb(218, 218, 218);
   --color-light: rgba(202, 210, 197, 0.6);
 
+  --bg-image: url('../src/assets/bg-texture-dark.png');
+
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
@@ -23,7 +25,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  transition: var(--transition);
 }
 
 html {
@@ -36,10 +37,12 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture-2.png);
+  color: var(--color-white);
+  background-color: var(--color-bg);
+  background-image: var(--bg-image);
+  transition: background-color 400ms ease;
+  transition: color 400ms ease;
 }
 
 .container {
