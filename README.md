@@ -210,7 +210,7 @@ curiosity and creative spirit by crafting code and connecting communities.
 <br />
 <h2 align="center">GitHub Stats</h2>
 <p align="center">
-      <picture>
+      <!-- <picture>
         <source
           srcset="
             https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=light
@@ -245,7 +245,7 @@ curiosity and creative spirit by crafting code and connecting communities.
           src="https://github-readme-stats.vercel.app/api?username=austin-rt&count_private=true&show_icons=true&theme=dark&icon_color=5ED6F8&ring_color=5ED6F8" alt="Austin's Github Stats"
         />
       </picture>
-      <br />
+      <br /> -->
       <picture>
         <source
           srcset="
