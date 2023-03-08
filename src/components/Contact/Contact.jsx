@@ -43,7 +43,7 @@ export default function Contact() {
       <div className='container contact__container'>
         <div className='contact__options'>
           <a
-            href='mailto:me@austinrt.io?subject=Hi%20Austin!'
+            href='mailto:austinrtaylor91@gmail.com?subject=Hi%20Austin!'
             target='_blank'
             rel='noopener noreferrer'
           >
