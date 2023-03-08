@@ -8,7 +8,7 @@
   --color-white: rgb(218, 218, 218);
   --color-light: rgba(202, 210, 197, 0.6);
 
-  --bg-image: url('../src/assets/bg-texture-dark.png');
+  --bg-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpshDWAAAAInRSTlMAAAECAwQGBwgJCgwNDg8REhMUFRYXGBkbHB0eHyAjJCUnTiXhiAAAAHFJREFUeNplzMUBhUAUQ9Hg7u7Qf5HA5M1XsstZXBh/gxGF0HMdKChbX/++JOT7RHHHLSPY1T54/BUIsMpb+DUoWVZ+gVu6MenxBe58dKojwF5TsCzgqR7LAvbC3i1jQEhn9mGXS2YqcBPI/Dom/O0BF9UMBvRJ/iE6AAAAAElFTkSuQmCC');
 
   --transition: all 400ms ease;
 
@@ -55,6 +55,11 @@ h3,
 h4,
 h5 {
   font-weight: 300;
+  transition: var(--transition);
+}
+
+p {
+  transition: var(--transition);
 }
 
 h1 {
