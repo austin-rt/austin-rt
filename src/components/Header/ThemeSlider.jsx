@@ -10,7 +10,6 @@ const ThemeSlider = () => {
   const changeTheme = e => {
     if (e && e.type === 'keydown' && e.key !== 'Enter') return;
     switch (theme) {
-      case undefined:
       case 'dark':
         setTheme('light');
         break;

@@ -5,6 +5,7 @@ header {
 }
 
 .header__container {
+  margin: -1.5rem auto 0 auto;
   text-align: center;
   height: 100%;
   position: relative;
@@ -53,7 +54,7 @@ header {
 }
 
 .call-to-action {
-  margin-top: 2.5rem;
+  margin: 1rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -77,9 +78,10 @@ header {
 }
 
 .pfp-container {
-  background-image: linear-gradient(var(--color-primary), var(--color-primary-alt), rgba(82, 121, 111, 0.08));
-  width: 25rem;
-  margin: 4rem auto 0 auto;
+  background: linear-gradient(var(--color-primary), var(--color-primary-alt), rgba(82, 121, 111, 0.08));
+  max-width: 24rem;
+  width: 80%;
+  margin: 2rem auto 0 auto;
   border-radius: 2rem;
   overflow: hidden;
   padding: 2rem 0 0 0;
@@ -88,11 +90,6 @@ header {
 
 .pfp {
   width: 100%;
-}
-
-.pfp-container:hover,
-.pfp-container:focus {
-  transform: scale(1.05);
 }
 
 .scroll__down {
@@ -157,22 +154,8 @@ header {
 
 @media screen and (max-width: 600px) {
 
-  header {
-    height: 90vh;
-  }
-
-  .header__container {
-    margin: -1.5rem auto 0 auto;
-  }
-
-  .call-to-action {
-    margin-top: 1rem;
-    ;
-  }
-
   .pfp-container {
     width: 80%;
-    margin: 2rem auto 0 auto;
   }
 
   .header__socials,
