@@ -34,7 +34,6 @@ curiosity and creative spirit by crafting code and connecting communities.
       src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge"
       alt="GitHub Badge"
   /></a>
-  <br />
   <a
     href="https://austinrt.medium.com/"
     target="_blank"
@@ -48,7 +47,6 @@ curiosity and creative spirit by crafting code and connecting communities.
     ><img
     src="https://img.shields.io/badge/dev.to-0A0A0A?logo=devdotto&logoColor=fff&style=for-the-badge"
     alt="dev.to Badge"></a>
-  <br />
   <a
     href="https://www.npmjs.com/~austinrt"
     target="_blank"
