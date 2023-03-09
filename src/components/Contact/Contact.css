@@ -82,6 +82,7 @@ form {
   align-self: flex-end;
   line-height: 1.7;
   font-size: 1rem;
+  transition: var(--transition);
 }
 
 input,
@@ -101,13 +102,27 @@ textarea::placeholder {
   color: var(--color-light);
 }
 
-@media screen and (max-width: 1024px) {
+.hidden {
+  opacity: 0;
+  transition: var(--transition);
+}
 
+.form-feedback-container {
+  display: flex;
+  justify-content: center;
+  color: var(--color-light);
+  height: .1rem;
+  margin: 1rem;
+  opacity: 1;
+  transition: var(--transition);
+}
+
+
+@media screen and (max-width: 1024px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
 }
 
 @media screen and (max-width: 600px) {

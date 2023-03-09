@@ -1,5 +1,5 @@
 import './Contact.css';
-import { useRef, useContext } from 'react';
+import { useRef, useContext, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { MdOutlineEmail } from 'react-icons/md';
 import { ImLinkedin } from 'react-icons/im';
@@ -7,28 +7,37 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { RefContext } from '../../context/RefContext';
 
 const Contact = () => {
+  const [emailSent, setEmailSent] = useState(false);
   const { contact } = useContext(RefContext);
-  const form = useRef();
+
+  const form = useRef(null);
+  const formFeedback = useRef(null);
 
   const sendEmail = e => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_faf1dzf',
-        'template_29aldcd',
-        form.current,
-        'c3BNf-OCrtQM_IBtB'
-      )
-      .then(
-        result => {
-          console.log(result.text);
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     'service_faf1dzf',
+    //     'template_29aldcd',
+    //     form.current,
+    //     'c3BNf-OCrtQM_IBtB'
+    //   )
+    //   .then(
+    //     result => {
+    //       console.log(result.text);
+    //     },
+    //     error => {
+    //       console.log(error.text);
+    //     }
+    //   );
 
+    setEmailSent(true);
+    // formFeedback.current.style.opacity = 1;
+    // setTimeout(() => {
+    // formFeedback.current.style.opacity = 0;
+    // }, 10000);
+    setTimeout(() => setEmailSent(false), 10000);
     e.target.reset();
   };
 
@@ -90,7 +99,7 @@ const Contact = () => {
             required={true}
           />
           <input
-            type='text'
+            type='email'
             name='email'
             placeholder='Your Email'
             required={true}
@@ -105,9 +114,17 @@ const Contact = () => {
             type='submit'
             className='btn btn-primary form__btn'
           >
-            Send
+            {emailSent ? 'Send Another' : 'Send'}
           </button>
         </form>
+      </div>
+      <div className='form-feedback-container'>
+        <h5
+          className={`form-feedback ${emailSent ? '' : 'hidden'}`}
+          ref={formFeedback}
+        >
+          Thanks for reaching out! I'll get back to you as soon as I can!
+        </h5>
       </div>
     </section>
   );
