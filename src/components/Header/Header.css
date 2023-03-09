@@ -18,9 +18,10 @@ header {
 
 .header__theme-slider {
   color: var(--color-bg);
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: fixed;
+  right: 7.75rem;
+  top: 1.55rem;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -150,6 +151,10 @@ header {
     bottom: 11.7rem;
     right: -3.5rem;
   }
+
+    .header__theme-slider {
+    right: 4.1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
