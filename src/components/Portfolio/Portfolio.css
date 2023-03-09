@@ -68,7 +68,7 @@ transition: var(--transition);
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
