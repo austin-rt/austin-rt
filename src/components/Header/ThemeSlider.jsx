@@ -5,16 +5,18 @@ import { STYLES } from '../../utils/constants';
 
 const ThemeSlider = () => {
   const slider = useRef(null);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   const changeTheme = e => {
     if (e && e.type === 'keydown' && e.key !== 'Enter') return;
     switch (theme) {
       case 'dark':
         setTheme('light');
+        localStorage.setItem('theme', 'light');
         break;
       case 'light':
         setTheme('dark');
+        localStorage.setItem('theme', 'dark');
         break;
       default:
         break;
