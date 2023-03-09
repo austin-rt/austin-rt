@@ -16,27 +16,23 @@ const Contact = () => {
   const sendEmail = e => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     'service_faf1dzf',
-    //     'template_29aldcd',
-    //     form.current,
-    //     'c3BNf-OCrtQM_IBtB'
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result.text);
-    //     },
-    //     error => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        'service_faf1dzf',
+        'template_29aldcd',
+        form.current,
+        'c3BNf-OCrtQM_IBtB'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
 
     setEmailSent(true);
-    // formFeedback.current.style.opacity = 1;
-    // setTimeout(() => {
-    // formFeedback.current.style.opacity = 0;
-    // }, 10000);
     setTimeout(() => setEmailSent(false), 10000);
     e.target.reset();
   };
