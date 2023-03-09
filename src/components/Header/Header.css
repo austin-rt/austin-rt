@@ -1,13 +1,12 @@
 header {
-  height: 100vh;
   padding-top: 3rem;
   overflow: hidden;
+  height: 100vh;
 }
 
 .header__container {
   margin: -1.5rem auto 0 auto;
   text-align: center;
-  height: 100%;
   position: relative;
 }
 
@@ -82,6 +81,7 @@ header {
   background: linear-gradient(var(--color-primary), var(--color-primary-alt), rgba(82, 121, 111, 0.08));
   max-width: 24rem;
   width: 80%;
+  max-height: 32rem;
   margin: 2rem auto 0 auto;
   border-radius: 2rem;
   overflow: hidden;
@@ -137,7 +137,10 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-
+  
+  header {
+    height: max-content;
+  }
   .header__socials {
     left: 0;
     bottom: 9.2rem;
@@ -162,6 +165,10 @@ header {
   .pfp-container {
     width: 80%;
   }
+
+  .header__theme-slider {
+      right: 2.5rem;
+    }
 
   .header__socials,
   .scroll__down {
