@@ -1,0 +1,132 @@
+article>a{
+  color: var(--color-primary)
+}
+
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-alt);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option > * {
+  transition: var(--transition);
+}
+
+.contact__option:hover,
+.contact__option:focus {
+  background: transparent;
+  border-color: var(--color-primary-alt);
+}
+
+.contact__option:hover > h4,
+.contact__option:focus > h4 {
+  color: var(--color-primary);
+}
+
+.contact__option:hover > p,
+.contact__option:focus > p {
+  color: var(--color-white);
+}
+
+.contact__option-icon {
+  margin-bottom: .5rem;
+}
+
+.contact__option:hover > .contact__option-icon {
+  color: var(--color-light);
+}
+
+.contact__option h4{
+  color: var(--color-light)
+}
+
+.contact__option {
+  color: var(--color-primary);
+}
+
+.contact__option p {
+  font-size: .8rem;
+}
+
+.contact__option a {
+  margin-top: .7rem;
+  display: inline-block;
+  font-size: .8rem;
+  color: var(--color-white);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-self: center;
+}
+
+.form__btn {
+  align-self: flex-end;
+  line-height: 1.7;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-alt);
+  resize: none;
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-light);
+}
+
+.hidden {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.form-feedback-container {
+  display: flex;
+  justify-content: center;
+  color: var(--color-light);
+  height: .1rem;
+  margin: 1rem;
+  opacity: 1;
+  transition: var(--transition);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm)
+  }
+}
