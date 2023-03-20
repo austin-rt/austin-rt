@@ -247,7 +247,7 @@ curiosity and creative spirit by crafting code and connecting communities.
       </picture>
       <br />
       <br />
-      <picture>
+      <!-- <picture>
         <source
           srcset="
             https://github-readme-streak-stats.herokuapp.com/?user=austin-rt&theme=light
@@ -265,7 +265,7 @@ curiosity and creative spirit by crafting code and connecting communities.
         />
       </picture>
       <br />
-      <br />
+      <br /> -->
     <picture>
     <source
           srcset="
