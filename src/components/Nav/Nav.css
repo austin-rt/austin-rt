@@ -34,7 +34,7 @@ cursor: pointer;
   padding: .25rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-white);
+  color: var(--color-primary);
   font-size: 1rem;
   margin: 0 auto;
   transition: var(--transition);
@@ -43,7 +43,7 @@ cursor: pointer;
 .nav__text {
   font-size: .65rem;
   text-align: center;
-  color: var(--color-white)
+  color: var(--color-primary)
 }
 
 .nav__link:hover,
@@ -52,6 +52,6 @@ cursor: pointer;
 }
 
 .nav__link.active {
-  background: var(--color-bg);
-  color: var(--color-white)
+  background: var(--color-primary);
+  color: var(--color-bg)
 }
