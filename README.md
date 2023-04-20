@@ -3,18 +3,14 @@
 </p>
 
 <h1 align="center">Hey, I'm Austin!</h1>
-From the lens of a camera to the lines of code, I've always been driven by my
-passion for understanding what makes things tick. I bring a unique blend of
-technical and creative abilities to my approach, whether writing code or shooting and developing my own film photography. This
-curiosity and a desire to connect led me to bridge gaps in the film industry and
-now in the tech world.
+Through the lens of a camera and into the lines of code, I am driven by a passion for uncovering the magic that makes things tick. My approach blends technical prowess and artistic ingenuity, whether I'm writing code or shooting and developing my own film photography. This insatiable curiosity fuels my desire to bridge gaps and connect worlds, leading me from the film industry to the ever-evolving realm of technology.
 
-As a design-focused software engineer, I bring my technical skills, artistic
-eye, and creative problem-solving to the table in equal measure. My constant
-drive to evolve and passion for mentoring others make me a valuable asset to any
-team.
+As a design-focused software engineer, I bring a balance of technical skill,
+artistic vision, and creative problem-solving to every challenge. My relentless
+pursuit of growth and dedication to mentoring others make me a valuable asset to
+any team.
 
-After a successful tenure in the film industry, I am further cultivating my
+Having enjoyed success in the film industry, I am further cultivating my
 curiosity and creative spirit by crafting code and connecting communities.
 
 <h2 align="center">Let's Connect</h2>
