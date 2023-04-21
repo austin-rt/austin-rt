@@ -264,17 +264,17 @@ curiosity and creative spirit by crafting code and connecting communities.
     <br />
     <picture>
       <source
-        srcset="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&bg_color=ffffff&color=000000&theme=react" 
+        srcset="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=400&bg_color=ffffff&color=000000&theme=react" 
         media="(prefers-color-scheme: light)"
       />
       <source
         srcset="
-          https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&theme=react-dark
+          https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=400&theme=react-dark
         "
         media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
       />
       <img
-        src="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=600&theme=react-dark" alt="Austin's Contribution Graph"
+        src="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=400&theme=react-dark" alt="Austin's Contribution Graph"
       />
     </picture>
   </p>
