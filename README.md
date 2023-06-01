@@ -144,10 +144,6 @@ curiosity and creative spirit by crafting code and connecting communities.
             src="https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=flat-square"
             alt="Flask Badge"
           />
-          <img
-            src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000&style=flat-square"
-            alt="Firebase Badge"
-          />
         </td>
       </tr>
       <tr>
@@ -160,6 +156,10 @@ curiosity and creative spirit by crafting code and connecting communities.
           <img
             src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat-square"
             alt="MongoDB Badge"
+          />
+          <img
+            src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000&style=flat-square"
+            alt="Firebase Badge"
           />
         </td>
       </tr>
