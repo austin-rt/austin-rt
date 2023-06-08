@@ -110,14 +110,14 @@ spirit by crafting code and connecting communities.
             src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat-square"
             alt="Tailwind CSS Badge"
           />
-          <img
+          <!-- <img
             src="https://img.shields.io/badge/Material%20UI-007FFF.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAMAAABn0dyjAAABpFBMVEX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8IgZTZAAAAi3RSTlMAAgMEBQYHCAkKCwwNDg8QERIVFxgZGh0fICEiJSYnKCkqLS4vMTI1Njc4Pj9AQ0RGSUpRUlRXWFpeX2hpamxvc3V6foWGiIuMjY%2BYmpyen6CjpKesrbCxs7W4ubq7vMLDxMXGx8rP0dPX2Nrb3N3e3%2BDh4uTl5ufo6ers7e7w8fLz9PX29%2Fj6%2B%2Fz9bRIcnQAAAXBJREFUeNpk0AOXM0EQheEb2%2Fps27aNtW3biHX%2F9E5PxXmO%2B7ytwtgrE5o9HLsC5VEPdjl4Bw0utpEXAFxoYxxrZOHPKdQIfY6TWS2wTZNbKiD3PvoAYX65TErgWCQPJSCnnxqg3B0iK8Ec2SOB0n0DOP23wGrg3F59aVVB7kDWvn%2Fcp5LKSOB6GwZUEL%2F1NcmKwv%2Fr8xJoJMgcx7UuUozch3mlMTgD4MkUNetvbICnGhz7Ugng%2FbCb%2FhGFxrgkAbzvtlLVADh7FboncQksveQWdqqBuNJBTfES4FhVwXh9EP6WoLJ2Qga1heCnOM8CwvJ6Vb76%2ByQA%2B6wKgEst5yDuDVPXd1vyBQkAE3QO2T7z3AjlfGteggrXEsmVD34ogU8H1CTqgkWSP%2FXtphfzVIr%2FUMO9Ts3kY%2BBmP3WjD1DLOkBd%2B6%2B8fPWNFfV87zdZkfgWQbOjiXu3Q%2BXDVRmwA51okHSaKQNOwGSRXebADecCAB9huN3nGl%2FiAAAAAElFTkSuQmCC&style=flat-square"
             alt="Material UI Badge"
           />
           <img
             src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=flat-square"
             alt="Bootstrap Badge"
-          />
+          /> -->
           <img
             src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=flat-square"
             alt="Vue.js Badge"
@@ -135,7 +135,7 @@ spirit by crafting code and connecting communities.
             src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=2361DAFB&style=flat-square"
             alt="Express Badge"
           />
-          <img
+          <!-- <img
             src="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&logoColor=fff&style=flat-square"
             alt="Sequelize Badge"
           />
@@ -150,7 +150,7 @@ spirit by crafting code and connecting communities.
           <img
             src="https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=flat-square"
             alt="Flask Badge"
-          />
+          /> -->
         </td>
       </tr>
       <tr>
@@ -189,7 +189,7 @@ spirit by crafting code and connecting communities.
           <img src="https://img.shields.io/badge/Adobe%20After%20Effects-99F?logo=adobeaftereffects&logoColor=fff&style=flat-square" alt="Adobe After Effects Badge">
         </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>Utilities</td>
         <td>
           <img
@@ -205,7 +205,7 @@ spirit by crafting code and connecting communities.
             alt="npm Badge"
           />
         </td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
   <hr />
