@@ -5,16 +5,22 @@
   <h1 align="center">Hey, I'm Austin!</h1>
   Through the lens of a camera and into the lines of code, I am driven by a passion for uncovering the magic that makes things tick. My approach blends technical prowess and artistic ingenuity, whether I'm writing code or shooting and developing my own film photography. This insatiable curiosity fuels my desire to bridge gaps and connect worlds, leading me from the film industry to the ever-evolving realm of technology.
 
-As a design-focused software engineer, I bring a balance of technical skill,
-artistic vision, and creative problem-solving to every challenge. My relentless
-pursuit of growth and dedication to mentoring others make me a valuable asset to
-any team.
+As a design-focused software engineer, I bring a balance of technical skill, artistic vision, and
+creative problem-solving to every challenge. My relentless pursuit of growth and dedication to
+mentoring others make me a valuable asset to any team.
 
-Having enjoyed success in the film industry, I am further cultivating my
-curiosity and creative spirit by crafting code and connecting communities.
+Having enjoyed success in the film industry, I am further cultivating my curiosity and creative
+spirit by crafting code and connecting communities.
 
   <h2 align="center">Let's Connect</h2>
   <p align="center">
+    <a
+      href="https://www.austinrt.io/"
+      target="_blank"
+      ><img
+            src="https://img.shields.io/badge/austinrt.io-2F3E46.svg?style=flat-square"
+            alt="Material UI Badge"
+          /></a>
     <a
       href="https://www.linkedin.com/in/austinrt/"
       target="_blank"
@@ -29,6 +35,7 @@ curiosity and creative spirit by crafting code and connecting communities.
         src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat-square"
         alt="GitHub Badge"
     /></a>
+    <br/>
     <a
       href="https://austinrt.medium.com/"
       target="_blank"
