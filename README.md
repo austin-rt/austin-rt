@@ -2,7 +2,7 @@
   <img src="images/github-banner.png" alt="austin">
   </p>
 
-  <h1 align="center">Hey, I'm <a href="https://austinrt.io" target="_blank">Austin</a>!</h1>
+  <h1 align="center">Hi, I'm <a href="https://austinrt.io" target="_blank">Austin</a>!</h1>
   Through the lens of a camera and into the lines of code, I am driven by a passion for uncovering the magic that makes things tick. My approach blends technical prowess and artistic ingenuity, whether I'm writing code or shooting and developing my own film photography. This insatiable curiosity fuels my desire to bridge gaps and connect worlds, leading me from the film industry to the ever-evolving realm of technology.
 
 As a design-focused software engineer, I bring a balance of technical skill, artistic vision, and
