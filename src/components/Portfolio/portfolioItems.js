@@ -27,15 +27,6 @@ import { TbBrandTailwind } from "react-icons/tb";
 
 export const portfolioItems = [
   {
-    id: 0,
-    image: blueSkies,
-    title: "Blue Skies",
-    github: "https://github.com/austin-rt/weather-app-case-study",
-    demo: "https://blue-skies-weather.netlify.app/",
-    stack: [<SiTypescript />, <DiReact />, <TbBrandTailwind />, <SiNetlify />],
-  },
-  {
-    id: 1,
     image: stayPuft,
     title: "Stay Puft Forms",
     github: "https://gitlab.com/nerds-with-charisma/stay-puft",
@@ -50,7 +41,13 @@ export const portfolioItems = [
     ],
   },
   {
-    id: 2,
+    image: blueSkies,
+    title: "Blue Skies",
+    github: "https://github.com/austin-rt/weather-app-case-study",
+    demo: "https://blue-skies-weather.netlify.app/",
+    stack: [<SiTypescript />, <DiReact />, <TbBrandTailwind />, <SiNetlify />],
+  },
+  {
     image: butterBehavior,
     title: "Butter Behavior",
     github: "https://butterbehavior.com/",
@@ -64,7 +61,6 @@ export const portfolioItems = [
     ],
   },
   // {
-  //   id: 2,
   //   image: brtr,
   //   title: "brtr",
   //   github: "https://github.com/austin-rt/brtr-frontend",
@@ -79,7 +75,6 @@ export const portfolioItems = [
   //   ],
   // },
   // {
-  //   id: 3,
   //   image: hoverstateUniversity,
   //   title: "Hoverstate University",
   //   github: "https://github.com/austin-rt/hoverstate-university",
@@ -96,7 +91,6 @@ export const portfolioItems = [
   //   ],
   // },
   // {
-  //   id: 4,
   //   image: ratedOur,
   //   title: "Rated Our",
   //   github: "https://github.com/austin-rt/rated-our-frontend",
@@ -113,7 +107,6 @@ export const portfolioItems = [
   //   ],
   // },
   {
-    id: 5,
     image: blockInvaders,
     title: "Block Invaders",
     github: "https://github.com/austin-rt/blockinvaders",
@@ -123,7 +116,6 @@ export const portfolioItems = [
     stack: [<DiHtml5 />, <DiCss3 />, <SiTypescript />, <FaFly />],
   },
   // {
-  //   id: 6,
   //   image: crappleMaps,
   //   title: "Crapple Maps",
   //   github: "https://github.com/austin-rt/crapple-maps",
