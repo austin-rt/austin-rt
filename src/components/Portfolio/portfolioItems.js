@@ -38,8 +38,8 @@ export const portfolioItems = [
     id: 1,
     image: stayPuft,
     title: "Stay Puft Forms",
-    github: "https://butterbehavior.com/",
-    demo: "https://thunderbird-68145.web.app/",
+    github: "https://gitlab.com/nerds-with-charisma/stay-puft",
+    demo: "https://staypuftforms.netlify.app/",
     stack: [
       <SiTypescript />,
       <DiReact />,
