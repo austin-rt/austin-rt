@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 :root {
   --color-bg: rgb(47, 62, 70);
@@ -8,11 +8,11 @@
   --color-white: rgb(218, 218, 218);
   --color-light: rgba(202, 210, 197, 0.6);
 
-  --bg-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpshDWAAAAInRSTlMAAAECAwQGBwgJCgwNDg8REhMUFRYXGBkbHB0eHyAjJCUnTiXhiAAAAHFJREFUeNplzMUBhUAUQ9Hg7u7Qf5HA5M1XsstZXBh/gxGF0HMdKChbX/++JOT7RHHHLSPY1T54/BUIsMpb+DUoWVZ+gVu6MenxBe58dKojwF5TsCzgqR7LAvbC3i1jQEhn9mGXS2YqcBPI/Dom/O0BF9UMBvRJ/iE6AAAAAElFTkSuQmCC');
+  --bg-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpshDWAAAAInRSTlMAAAECAwQGBwgJCgwNDg8REhMUFRYXGBkbHB0eHyAjJCUnTiXhiAAAAHFJREFUeNplzMUBhUAUQ9Hg7u7Qf5HA5M1XsstZXBh/gxGF0HMdKChbX/++JOT7RHHHLSPY1T54/BUIsMpb+DUoWVZ+gVu6MenxBe58dKojwF5TsCzgqR7LAvbC3i1jQEhn9mGXS2YqcBPI/Dom/O0BF9UMBvRJ/iE6AAAAAElFTkSuQmCC");
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 80%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1.7;
   color: var(--color-white);
   background-color: var(--color-bg);
@@ -74,13 +74,13 @@ section {
   margin-top: 6rem;
 }
 
-section>h2,
-section>h5 {
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-section>h2 {
+section > h2 {
   font-size: 2rem;
   color: var(--color-primary);
   margin-bottom: 3rem;
@@ -141,7 +141,7 @@ img {
 
 .icon:hover,
 .icon:focus {
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 @media screen and (max-width: 1024px) {
@@ -159,7 +159,7 @@ img {
     width: var(--container-width-sm);
   }
 
-  section>h2 {
+  section > h2 {
     margin-bottom: 2rem;
   }
 }
