@@ -36,7 +36,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Repo
+                Repo
               </a>
               <a
                 href={demo}
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Demo
               </a>
             </div>
           </article>
