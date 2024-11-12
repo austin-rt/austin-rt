@@ -1,107 +1,92 @@
-import './Nav.css';
-import { useState, useContext } from 'react';
-import { AiTwotoneHome } from 'react-icons/ai';
-import { AiOutlineUser } from 'react-icons/ai';
-import { AiTwotoneMail } from 'react-icons/ai';
-import { BiBook } from 'react-icons/bi';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { RefContext } from '../../context/RefContext';
+import "./Nav.css";
+import { useState, useContext } from "react";
+import { AiFillHome } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
+import { BiBook } from "react-icons/bi";
+import { BsFillBriefcaseFill } from "react-icons/bs";
+import { RefContext } from "../../context/RefContext";
 
 const Nav = () => {
   const { home, about, portfolio, experience, contact, scrollTo } =
     useContext(RefContext);
-  const [activeNav, setActiveNav] = useState('#');
+  const [activeNav, setActiveNav] = useState("#");
 
   return (
     <nav>
       <div
-        className='nav__container'
+        className="nav__container"
         onClick={() => {
-          setActiveNav('#');
+          setActiveNav("#");
           scrollTo(home);
         }}
       >
-        <div className={activeNav === '#' ? 'active nav__link' : 'nav__link'}>
-          <AiTwotoneHome
-            className='nav__icon'
-            title='home'
-          />
+        <div className={activeNav === "#" ? "active nav__link" : "nav__link"}>
+          <AiFillHome className="nav__icon" title="home" />
         </div>
-        <p className='nav__text'>Home</p>
+        <p className="nav__text">Home</p>
       </div>
       <div
-        className='nav__container'
+        className="nav__container"
         onClick={() => {
-          setActiveNav('#about');
+          setActiveNav("#about");
           scrollTo(about);
         }}
       >
         <div
-          className={activeNav === '#about' ? 'active nav__link' : 'nav__link'}
+          className={activeNav === "#about" ? "active nav__link" : "nav__link"}
         >
-          <AiOutlineUser
-            className='nav__icon'
-            title='about'
-          />
+          <AiOutlineUser className="nav__icon" title="about" />
         </div>
-        <p className='nav__text'>About</p>
+        <p className="nav__text">About</p>
       </div>
       <div
-        className='nav__container'
+        className="nav__container"
         onClick={() => {
-          setActiveNav('#portfolio');
+          setActiveNav("#portfolio");
           scrollTo(portfolio);
         }}
       >
         <div
           className={
-            activeNav === '#portfolio' ? 'active nav__link' : 'nav__link'
+            activeNav === "#portfolio" ? "active nav__link" : "nav__link"
           }
         >
-          <BsFillBriefcaseFill
-            className='nav__icon'
-            title='portfolio'
-          />
+          <BsFillBriefcaseFill className="nav__icon" title="portfolio" />
         </div>
-        <p className='nav__text'>Portfolio</p>
+        <p className="nav__text">Portfolio</p>
       </div>
       <div
-        className='nav__container'
+        className="nav__container"
         onClick={() => {
-          setActiveNav('#experience');
+          setActiveNav("#experience");
           scrollTo(experience);
         }}
       >
         <div
           className={
-            activeNav === '#experience' ? 'active nav__link' : 'nav__link'
+            activeNav === "#experience" ? "active nav__link" : "nav__link"
           }
         >
-          <BiBook
-            className='nav__icon'
-            title='experience'
-          />
+          <BiBook className="nav__icon" title="experience" />
         </div>
-        <p className='nav__text'>Experience</p>
+        <p className="nav__text">Experience</p>
       </div>
       <div
-        className='nav__container'
+        className="nav__container"
         onClick={() => {
-          setActiveNav('#contact');
+          setActiveNav("#contact");
           scrollTo(contact);
         }}
       >
         <div
           className={
-            activeNav === '#contact' ? 'active nav__link' : 'nav__link'
+            activeNav === "#contact" ? "active nav__link" : "nav__link"
           }
         >
-          <AiTwotoneMail
-            className='nav__icon'
-            title='contact'
-          />
+          <AiFillMail className="nav__icon" title="contact" />
         </div>
-        <p className='nav__text'>Contact</p>
+        <p className="nav__text">Contact</p>
       </div>
     </nav>
   );
