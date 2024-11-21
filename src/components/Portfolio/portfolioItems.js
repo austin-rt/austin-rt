@@ -4,7 +4,7 @@ import blueSkies from "../../assets/blue-skies-2.png";
 // import ratedOur from "../../assets/rated-our-2.png";
 // import crappleMaps from "../../assets/crapple-maps-1.png";
 import butterBehavior from "../../assets/butter-behavior-1.png";
-import stayPuft from "../../assets/staypuft.gif";
+import stayPuft from "../../assets/stay-puft.gif";
 import slimer from "../../assets/slimer.gif";
 // import hoverstateUniversity from "../../assets/hoverstate-university-1.png";
 import { DiHtml5, DiCss3, /* DiJavascript, */ DiReact } from "react-icons/di";
