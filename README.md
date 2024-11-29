@@ -229,7 +229,7 @@ spirit by crafting code and connecting communities.
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=austin-rt&hide_progress=true&theme=dark" alt="Austin's Most Used Languages"
       />
     </picture>
-    <br />
+    <!-- <br />
     <br />
     <picture>
       <source
@@ -283,5 +283,5 @@ spirit by crafting code and connecting communities.
       <img
         src="https://github-readme-activity-graph.cyclic.app/graph?username=austin-rt&area=true&height=400&theme=react-dark" alt="Austin's Contribution Graph"
       />
-    </picture>
+    </picture> -->
   </p>
