@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --color-bg: rgb(47, 62, 70);
+@theme {
+  --color-bg-primary: rgb(47, 62, 70);
   --color-bg-alt: rgb(53, 79, 82);
   --color-primary: rgb(132, 169, 140);
   --color-primary-alt: rgba(82, 121, 111, 0.4);
@@ -10,43 +10,32 @@
 
   --bg-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAZlBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpshDWAAAAInRSTlMAAAECAwQGBwgJCgwNDg8REhMUFRYXGBkbHB0eHyAjJCUnTiXhiAAAAHFJREFUeNplzMUBhUAUQ9Hg7u7Qf5HA5M1XsstZXBh/gxGF0HMdKChbX/++JOT7RHHHLSPY1T54/BUIsMpb+DUoWVZ+gVu6MenxBe58dKojwF5TsCzgqR7LAvbC3i1jQEhn9mGXS2YqcBPI/Dom/O0BF9UMBvRJ/iE6AAAAAElFTkSuQmCC");
 
-  --transition: all 400ms ease;
-
-  --container-width-lg: 80%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-lg: 80%;
+  --container-md: 86%;
+  --container-sm: 90%;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  @apply m-0 box-border border-0 p-0 no-underline;
   outline: 0;
-  box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
 }
-
 ::-webkit-scrollbar {
-  display: none;
+  @apply hidden;
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1.7;
-  color: var(--color-white);
-  background-color: var(--color-bg);
+  @apply bg-bg-primary font-['Rubik'] leading-[1.7] text-white transition-[background-color] duration-[400ms] ease-[ease];
   background-image: var(--bg-image);
-  transition: background-color 400ms ease;
 }
 
 .container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
+  @apply mx-auto;
+  width: var(--container-lg);
 }
 
 h1,
@@ -54,112 +43,73 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 300;
-  transition: var(--transition);
+  @apply font-light transition;
 }
-
 p {
-  transition: var(--transition);
+  @apply transition;
 }
-
 h1 {
-  font-size: 3rem;
+  @apply text-5xl;
 }
-
 h5 {
-  font-size: 1.25rem;
+  @apply text-xl;
 }
-
 section {
-  margin-top: 6rem;
+  @apply mt-24;
 }
-
 section > h2,
 section > h5 {
-  text-align: center;
-  color: var(--color-light);
+  @apply text-center text-light;
 }
-
 section > h2 {
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-bottom: 3rem;
+  @apply mb-12 text-[2rem] text-primary;
 }
-
 .text-light {
-  color: var(--color-light);
+  @apply text-light;
 }
-
 a {
-  color: var(--color-primary);
-  transition: var(--transition);
+  @apply text-primary transition;
 }
-
 a:hover,
 a:focus {
-  color: var(--color-white);
+  @apply text-white;
 }
-
 svg {
-  transition: none;
+  @apply transition-none;
 }
-
 .btn {
-  width: max-content;
-  display: inline-block;
-  color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
+  @apply inline-block w-max cursor-pointer rounded-[0.4rem] border border-solid border-primary px-[1.2rem] py-3 text-primary transition;
 }
-
 .btn:hover,
 .btn:focus {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
+  @apply border-transparent bg-white text-bg-primary;
 }
-
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  @apply bg-primary text-bg-primary;
 }
-
 img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+  @apply block w-full object-cover;
 }
-
 .icon {
-  color: var(--color-primary);
-  font-size: 2rem;
-  transition: var(--transition);
+  @apply text-[2rem] text-primary transition;
 }
-
 .icon:hover,
 .icon:focus {
-  color: var(--color-white);
+  @apply text-white;
 }
-
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    @apply w-[var(--container-md)];
   }
-
   section {
-    margin-top: 6rem;
+    @apply mt-24;
   }
 }
-
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);
+    @apply w-[var(--container-sm)];
   }
-
   section > h2 {
-    margin-bottom: 2rem;
+    @apply mb-8;
   }
 }
