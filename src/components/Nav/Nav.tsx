@@ -8,9 +8,10 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 import { RefContext } from "../../context/RefContext";
 
 const Nav = () => {
-  const { home, about, portfolio, experience, contact, scrollTo } =
-    useContext(RefContext);
   const [activeNav, setActiveNav] = useState("#");
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { home, about, portfolio, experience, contact, scrollTo } = context;
 
   return (
     <nav>
