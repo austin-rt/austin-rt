@@ -1,34 +1,29 @@
-import './Header.css';
-import { useContext } from 'react';
-import { RefContext } from '../../context/RefContext';
-import CallToAction from './CallToAction';
-import HeaderSocials from './HeaderSocials';
-import pfp from '../../assets/2023-headshot-no-bg.png';
-import ThemeSlider from './ThemeSlider';
+import "./Header.css";
+import { useContext } from "react";
+import { RefContext } from "../../context/RefContext";
+import CallToAction from "./CallToAction";
+import HeaderSocials from "./HeaderSocials";
+import pfp from "../../assets/2023-headshot-no-bg.png";
+import ThemeSlider from "./ThemeSlider";
 
 const Header = () => {
-  const { home, portfolio, contact, scrollTo } = useContext(RefContext);
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { home, portfolio, contact, scrollTo } = context;
   return (
     <header ref={home}>
-      <div className='container header__container'>
+      <div className="header__container container">
         <ThemeSlider />
-        <h5 className='text-light'>Hey there, I'm</h5>
-        <h1 className='header__name'>Austin Taylor</h1>
-        <h5 className='text-light'>and I'm a Software Developer.</h5>
-        <CallToAction
-          contact={contact}
-          scrollTo={scrollTo}
-        />
+        <h5 className="text-light">Hey there, I'm</h5>
+        <h1 className="header__name">Austin Taylor</h1>
+        <h5 className="text-light">and I'm a Software Developer.</h5>
+        <CallToAction contact={contact} scrollTo={scrollTo} />
         <HeaderSocials />
-        <div className='pfp-container'>
-          <img
-            src={pfp}
-            className='pfp'
-            alt='austin taylor'
-          />
+        <div className="pfp-container">
+          <img src={pfp} className="pfp" alt="austin taylor" />
         </div>
-        <div className='scroll__down__container'>
-          <div className='scroll__down__portfolio scroll__down'>
+        <div className="scroll__down__container">
+          <div className="scroll__down__portfolio scroll__down">
             <h3
               onClick={() => {
                 scrollTo(portfolio);
@@ -38,8 +33,8 @@ const Header = () => {
             </h3>
           </div>
           <div
-            className='scroll__down scroll__down__arrows'
-            title='scroll down arrows'
+            className="scroll__down scroll__down__arrows"
+            title="scroll down arrows"
           >
             <span
               onClick={() => {

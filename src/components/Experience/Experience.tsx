@@ -25,13 +25,15 @@ import { MdOutlineLibraryBooks } from "react-icons/md";
 import { RefContext } from "../../context/RefContext";
 
 const Experience = () => {
-  const { experience } = useContext(RefContext);
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { experience } = context;
   return (
     <section id="experience" ref={experience}>
       <h5>Skills</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container">
+      <div className="experience__container container">
         <div className="experience__fontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">

@@ -3,7 +3,9 @@ import { RefContext } from "../../context/RefContext";
 import { API } from "../../utils/constants";
 
 const CallToAction = () => {
-  const { contact, scrollTo } = useContext(RefContext);
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { contact, scrollTo } = context;
   return (
     <div className="call-to-action">
       <a href={API.resumeExport} download className="btn" role="button">

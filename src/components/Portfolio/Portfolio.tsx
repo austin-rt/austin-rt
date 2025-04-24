@@ -4,12 +4,14 @@ import { RefContext } from "../../context/RefContext";
 import { portfolioItems } from "./portfolioItems";
 
 const Portfolio = () => {
-  const { portfolio } = useContext(RefContext);
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { portfolio } = context;
   return (
     <section id="portfolio" ref={portfolio}>
       <h5>Recent Projects</h5>
       <h2>My Portoflio</h2>
-      <div className="container portfolio__container">
+      <div className="portfolio__container container">
         {portfolioItems.map(({ image, title, github, demo, stack }) => (
           <article className="portfolio__item" key={title}>
             <div className="portfolio__item-image">

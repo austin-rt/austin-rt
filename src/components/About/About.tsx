@@ -1,31 +1,27 @@
-import './About.css';
-import { useContext } from 'react';
-import { RefContext } from '../../context/RefContext';
-import aboutMe from '../../assets/about-me.png';
+import "./About.css";
+import { useContext } from "react";
+import { RefContext } from "../../context/RefContext";
+import aboutMe from "../../assets/about-me.png";
 
 const About = () => {
-  const { about, contact, scrollTo } = useContext(RefContext);
+  const context = useContext(RefContext);
+  if (!context) return null;
+  const { about, contact, scrollTo } = context;
   return (
-    <section
-      id='about'
-      ref={about}
-    >
+    <section id="about" ref={about}>
       <h5>Get To Know Me</h5>
       <h2>A Little About Me</h2>
 
-      <div className='container about__container'>
-        <div className='about__me'>
-          <div className='about__me-pfp-container'>
-            <div className='about__me-pfp'>
-              <img
-                src={aboutMe}
-                alt='austin taylor'
-              />
+      <div className="about__container container">
+        <div className="about__me">
+          <div className="about__me-pfp-container">
+            <div className="about__me-pfp">
+              <img src={aboutMe} alt="austin taylor" />
             </div>
           </div>
         </div>
 
-        <div className='about__content'>
+        <div className="about__content">
           <p>
             From the lens of a camera to the lines of code, I've always been
             driven by my passion for understanding what makes things tick. I
@@ -48,12 +44,12 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='about__contact-btn-container'>
+      <div className="about__contact-btn-container">
         <div
           onClick={() => {
             scrollTo(contact);
           }}
-          className='btn btn-primary about__contact-btn'
+          className="btn btn-primary about__contact-btn"
         >
           Say Hi
         </div>
