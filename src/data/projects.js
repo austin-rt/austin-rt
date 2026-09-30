@@ -26,6 +26,7 @@ export const projects = [
     status: "live",
     year: "2026",
     links: [
+      { type: "info", href: "https://crapplemaps.com/info" },
       {
         type: "appstore",
         href: "https://apps.apple.com/us/app/crapple-maps/id6795301489",

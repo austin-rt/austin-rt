@@ -1,7 +1,7 @@
 header {
   padding-top: 3rem;
+  padding-bottom: 2rem;
   overflow: hidden;
-  height: 100vh;
 }
 
 .header__container {
@@ -137,10 +137,6 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  
-  header {
-    height: max-content;
-  }
   .header__socials {
     left: 0;
     bottom: 9.2rem;

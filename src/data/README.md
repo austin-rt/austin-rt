@@ -13,6 +13,8 @@ component changes are needed to add, reorder or retire an item.
 2. Import it at the top of `projects.js` and append an object to the array. Fields:
    - `status`: `"live"` or `"finished"`
    - `links`: the first entry is the card's primary button; types come from `linkTypes.js`
+     (`info`, `appstore`, `playstore`, `web`, `storybook`, `repo`). Only list links that resolve;
+     Crapple Maps gets `playstore` once the Play listing is published.
    - `stack`: slugs from `stackIcons.js` (add a slug there if it is missing)
    - `image`: optional; without it the card shows a stack-icon tile
    - `featured`: `true` renders the wide two-column card
