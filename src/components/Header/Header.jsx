@@ -7,7 +7,7 @@ import pfp from '../../assets/2023-headshot-no-bg.png';
 import ThemeSlider from './ThemeSlider';
 
 const Header = () => {
-  const { home, portfolio, contact, scrollTo } = useContext(RefContext);
+  const { home, projects, contact, scrollTo } = useContext(RefContext);
   return (
     <header ref={home}>
       <div className='container header__container'>
@@ -31,10 +31,10 @@ const Header = () => {
           <div className='scroll__down__portfolio scroll__down'>
             <h3
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >
-              Portfolio
+              Projects
             </h3>
           </div>
           <div
@@ -43,52 +43,52 @@ const Header = () => {
           >
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
             <span
               onClick={() => {
-                scrollTo(portfolio);
+                scrollTo(projects);
               }}
             >{`>`}</span>
           </div>

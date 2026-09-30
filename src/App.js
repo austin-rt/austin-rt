@@ -6,7 +6,8 @@ import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
-import Portfolio from './components/Portfolio/Portfolio';
+import Projects from "./components/Projects/Projects";
+import OpenSource from "./components/OpenSource/OpenSource";
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
@@ -20,7 +21,8 @@ function App() {
       <Header />
       <Nav />
       <About />
-      <Portfolio />
+      <Projects />
+      <OpenSource />
       <Experience />
       <Contact />
       <Footer />

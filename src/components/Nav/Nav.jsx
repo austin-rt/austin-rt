@@ -5,89 +5,40 @@ import { AiOutlineUser } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BsFillBriefcaseFill } from "react-icons/bs";
+import { FaCodeBranch } from "react-icons/fa";
 import { RefContext } from "../../context/RefContext";
 
 const Nav = () => {
-  const { home, about, portfolio, experience, contact, scrollTo } =
+  const { home, about, projects, openSource, experience, contact, scrollTo } =
     useContext(RefContext);
   const [activeNav, setActiveNav] = useState("#");
 
+  const items = [
+    { hash: "#", label: "Home", ref: home, Icon: AiFillHome },
+    { hash: "#about", label: "About", ref: about, Icon: AiOutlineUser },
+    { hash: "#projects", label: "Projects", ref: projects, Icon: BsFillBriefcaseFill },
+    { hash: "#open-source", label: "Open Source", ref: openSource, Icon: FaCodeBranch },
+    { hash: "#experience", label: "Experience", ref: experience, Icon: BiBook },
+    { hash: "#contact", label: "Contact", ref: contact, Icon: AiFillMail },
+  ];
+
   return (
     <nav>
-      <div
-        className="nav__container"
-        onClick={() => {
-          setActiveNav("#");
-          scrollTo(home);
-        }}
-      >
-        <div className={activeNav === "#" ? "active nav__link" : "nav__link"}>
-          <AiFillHome className="nav__icon" title="home" />
-        </div>
-        <p className="nav__text">Home</p>
-      </div>
-      <div
-        className="nav__container"
-        onClick={() => {
-          setActiveNav("#about");
-          scrollTo(about);
-        }}
-      >
+      {items.map(({ hash, label, ref, Icon }) => (
         <div
-          className={activeNav === "#about" ? "active nav__link" : "nav__link"}
+          key={hash}
+          className="nav__container"
+          onClick={() => {
+            setActiveNav(hash);
+            scrollTo(ref);
+          }}
         >
-          <AiOutlineUser className="nav__icon" title="about" />
+          <div className={activeNav === hash ? "active nav__link" : "nav__link"}>
+            <Icon className="nav__icon" title={label.toLowerCase()} />
+          </div>
+          <p className="nav__text">{label}</p>
         </div>
-        <p className="nav__text">About</p>
-      </div>
-      <div
-        className="nav__container"
-        onClick={() => {
-          setActiveNav("#portfolio");
-          scrollTo(portfolio);
-        }}
-      >
-        <div
-          className={
-            activeNav === "#portfolio" ? "active nav__link" : "nav__link"
-          }
-        >
-          <BsFillBriefcaseFill className="nav__icon" title="portfolio" />
-        </div>
-        <p className="nav__text">Portfolio</p>
-      </div>
-      <div
-        className="nav__container"
-        onClick={() => {
-          setActiveNav("#experience");
-          scrollTo(experience);
-        }}
-      >
-        <div
-          className={
-            activeNav === "#experience" ? "active nav__link" : "nav__link"
-          }
-        >
-          <BiBook className="nav__icon" title="experience" />
-        </div>
-        <p className="nav__text">Experience</p>
-      </div>
-      <div
-        className="nav__container"
-        onClick={() => {
-          setActiveNav("#contact");
-          scrollTo(contact);
-        }}
-      >
-        <div
-          className={
-            activeNav === "#contact" ? "active nav__link" : "nav__link"
-          }
-        >
-          <AiFillMail className="nav__icon" title="contact" />
-        </div>
-        <p className="nav__text">Contact</p>
-      </div>
+      ))}
     </nav>
   );
 };
