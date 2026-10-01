@@ -1,5 +1,10 @@
 nav {
-  background: rgba(255, 255, 255, .1);
+  /* Mostly opaque in the theme's own background, so labels stay readable over
+     whatever scrolls underneath in both light and dark mode. */
+  background: var(--color-bg);
+  background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+  border: 1px solid var(--color-primary-alt);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
   width: max-content;
   padding: 0.7rem 1.7rem;
   z-index: 2;
@@ -44,12 +49,20 @@ cursor: pointer;
   font-size: .65rem;
   text-align: center;
   white-space: nowrap;
-  color: var(--color-primary)
+  color: var(--color-white);
+  transition: var(--transition);
 }
 
 .nav__link:hover,
 .nav__link:focus {
-  background: var(--color-primary)
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:focus .nav__icon,
+.nav__link.active .nav__icon {
+  color: var(--color-bg);
 }
 
 .nav__link.active {

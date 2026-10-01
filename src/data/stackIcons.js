@@ -3,7 +3,18 @@ import {
   SiAndroid,
   SiAxios,
   SiCss3,
+  SiDjango,
+  SiDocker,
   SiExpo,
+  SiExpress,
+  SiFirebase,
+  SiFlask,
+  SiMongodb,
+  SiMongoose,
+  SiNodedotjs,
+  SiPython,
+  SiSequelize,
+  SiVuedotjs,
   SiFfmpeg,
   SiGithubactions,
   SiGithubpages,
@@ -33,7 +44,7 @@ import {
   SiVercel,
   SiZod,
 } from "react-icons/si";
-import { TbBrandReactNative, TbSailboat } from "react-icons/tb";
+import { TbBrandReactNative, TbSailboat, TbVectorTriangle } from "react-icons/tb";
 
 // Slug -> icon + label. Projects reference stack entries by slug so the data
 // files stay plain objects with no JSX in them. List a project's core
@@ -75,6 +86,18 @@ export const stackIcons = {
   tailwind: { Icon: SiTailwindcss, label: "Tailwind CSS" },
   typescript: { Icon: SiTypescript, label: "TypeScript" },
   vercel: { Icon: SiVercel, label: "Vercel" },
+  django: { Icon: SiDjango, label: "Django" },
+  docker: { Icon: SiDocker, label: "Docker" },
+  express: { Icon: SiExpress, label: "Express" },
+  firebase: { Icon: SiFirebase, label: "Firebase" },
+  flask: { Icon: SiFlask, label: "Flask" },
+  mongodb: { Icon: SiMongodb, label: "MongoDB" },
+  mongoose: { Icon: SiMongoose, label: "Mongoose" },
+  nodejs: { Icon: SiNodedotjs, label: "Node.js" },
+  python: { Icon: SiPython, label: "Python" },
+  rag: { Icon: TbVectorTriangle, label: "RAG pipelines" },
+  sequelize: { Icon: SiSequelize, label: "Sequelize" },
+  vue: { Icon: SiVuedotjs, label: "Vue.js" },
   // No brand icon exists for Voyage AI in react-icons; the sailboat stands in.
   voyage: { Icon: TbSailboat, label: "Voyage AI" },
   zod: { Icon: SiZod, label: "Zod" },
