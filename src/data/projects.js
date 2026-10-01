@@ -2,7 +2,8 @@ import blockInvaders from "../assets/projects/block-invaders.webp";
 import blueSkies from "../assets/projects/blue-skies.webp";
 import crappleMaps from "../assets/projects/crapple-maps.webp";
 import endsTo from "../assets/projects/ends-to.webp";
-import slimer from "../assets/projects/slimer.gif";
+import pictureFrame from "../assets/projects/picture-frame.webp";
+import slimer from "../assets/projects/slimer.webp";
 import stayPuftForms from "../assets/projects/stay-puft-forms.webp";
 import whoClinches from "../assets/projects/who-clinches.webp";
 
@@ -26,12 +27,11 @@ export const projects = [
     status: "live",
     year: "2026",
     links: [
-      { type: "info", href: "https://crapplemaps.com/info" },
       {
         type: "appstore",
         href: "https://apps.apple.com/us/app/crapple-maps/id6795301489",
       },
-      { type: "web", href: "https://crapplemaps.com" },
+      { type: "webapp", href: "https://crapplemaps.com" },
       { type: "repo", href: "https://github.com/austin-rt/crapple-maps" },
     ],
     stack: ["expo", "react-native", "typescript", "supabase", "postgis", "vercel"],
@@ -71,14 +71,15 @@ export const projects = [
   },
   {
     slug: "picture-frame",
-    name: "Picture Frame",
-    tagline: "A cheap Android photo frame turned into a self-hosted kiosk.",
+    name: "Carousel",
+    tagline: "A self-hosted digital picture frame.",
     description:
       "Rooted, stripped of its stock software, and rebuilt around Termux: rclone pulls photos and videos from cloud storage, ffmpeg resizes them, and a small kiosk APK plays the slideshow. Deploys over Tailscale from CI.",
     status: "finished",
     year: "2026",
     links: [{ type: "repo", href: "https://github.com/austin-rt/picture-frame" }],
     stack: ["bash", "android", "rclone", "ffmpeg", "rust"],
+    image: pictureFrame,
   },
   {
     slug: "stay-puft-forms",

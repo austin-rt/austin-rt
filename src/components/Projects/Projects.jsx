@@ -4,12 +4,6 @@ import { RefContext } from "../../context/RefContext";
 import { projects } from "../../data/projects";
 import { stackIcons } from "../../data/stackIcons";
 import { linkTypes } from "../../data/linkTypes";
-import Pill from "../shared/Pill";
-
-const STATUS = {
-  live: { label: "Live", tone: "primary" },
-  finished: { label: "Finished", tone: "light" },
-};
 
 const Projects = () => {
   const { projects: sectionRef } = useContext(RefContext);
@@ -23,7 +17,6 @@ const Projects = () => {
         {projects.map((project) => {
           const primary = project.links[0];
           const primaryType = linkTypes[primary.type];
-          const status = STATUS[project.status];
           const itemClass = project.featured
             ? "projects__item projects__item--featured"
             : "projects__item";
@@ -54,10 +47,7 @@ const Projects = () => {
               </a>
 
               <div className="projects__body">
-                <div className="projects__heading">
-                  <h3>{project.name}</h3>
-                  <Pill tone={status.tone}>{status.label}</Pill>
-                </div>
+                <h3 className="projects__name">{project.name}</h3>
                 <p className="projects__tagline">{project.tagline}</p>
                 <p className="projects__description">{project.description}</p>
 

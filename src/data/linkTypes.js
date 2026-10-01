@@ -9,6 +9,7 @@ export const linkTypes = {
   appstore: { Icon: FaAppStoreIos, label: "App Store" },
   playstore: { Icon: FaGooglePlay, label: "Google Play" },
   web: { Icon: BsGlobe, label: "Website" },
+  webapp: { Icon: BsGlobe, label: "Web App" },
   storybook: { Icon: SiStorybook, label: "Storybook" },
   repo: { Icon: BsGithub, label: "GitHub" },
 };

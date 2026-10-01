@@ -12,13 +12,6 @@
   transition: var(--transition);
 }
 
-.experience__container>div:hover,
-.experience__container>div:focus {
-  background: transparent;
-  border-color: var(--color-primary-alt);
-  cursor: default;
-}
-
 .experience__container>div h3 {
   text-align: center;
   margin-bottom: 2rem;
@@ -43,6 +36,11 @@
   color: var(--color-primary);
   align-self: center;
   justify-self: center;
+}
+
+.experience__details-icon:hover,
+.experience__details-icon:focus {
+  color: var(--color-primary);
 }
 
 .experience__details-text {

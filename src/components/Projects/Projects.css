@@ -16,12 +16,6 @@
   min-width: 0;
 }
 
-.projects__item:hover,
-.projects__item:focus-within {
-  border-color: var(--color-primary-alt);
-  background: transparent;
-}
-
 .projects__item--featured {
   grid-column: 1 / -1;
   display: grid;
@@ -46,7 +40,8 @@
   transition: transform 400ms ease;
 }
 
-.projects__item:hover .projects__image img {
+.projects__image:hover img,
+.projects__image:focus-visible img {
   transform: scale(1.02);
 }
 
@@ -74,14 +69,7 @@
   min-width: 0;
 }
 
-.projects__heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-}
-
-.projects__heading h3 {
+.projects__name {
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--color-white);
@@ -110,10 +98,6 @@
   line-height: 1;
   display: inline-flex;
   transition: var(--transition);
-}
-
-.projects__stack-icon:hover {
-  color: var(--color-white);
 }
 
 .projects__links {

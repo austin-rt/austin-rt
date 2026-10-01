@@ -5,7 +5,9 @@ component changes are needed to add, reorder or retire an item.
 
 ## Add a project
 
-1. Capture a 1200x750 screenshot (16:10) and save it as WebP in `src/assets/projects/`.
+1. Make a 1200x750 card image (16:10) and save it as WebP in `src/assets/projects/`. The current
+   cards are composed images (brand gradient, title, framed screenshot), not raw screenshots. A plain
+   capture works too:
    ```sh
    npx playwright screenshot --browser chromium --viewport-size=1200,750 https://example.com shot.png
    cwebp -q 82 shot.png -o src/assets/projects/example.webp
@@ -13,7 +15,7 @@ component changes are needed to add, reorder or retire an item.
 2. Import it at the top of `projects.js` and append an object to the array. Fields:
    - `status`: `"live"` or `"finished"`
    - `links`: the first entry is the card's primary button; types come from `linkTypes.js`
-     (`info`, `appstore`, `playstore`, `web`, `storybook`, `repo`). Only list links that resolve;
+     (`appstore`, `playstore`, `webapp`, `web`, `storybook`, `repo`, `info`). Only list links that resolve;
      Crapple Maps gets `playstore` once the Play listing is published.
    - `stack`: slugs from `stackIcons.js` (add a slug there if it is missing)
    - `image`: optional; without it the card shows a stack-icon tile
