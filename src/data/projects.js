@@ -71,6 +71,8 @@ export const projects = [
       "redis",
       "graphql",
       "voyage",
+      "jest",
+      "playwright",
       "vercel",
     ],
     image: whoClinches,
