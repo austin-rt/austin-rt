@@ -47,6 +47,7 @@ export const skillGroups = [
       "bash",
       "github-actions",
       "vercel",
+      "claude-code",
     ],
   },
 ];

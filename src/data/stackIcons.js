@@ -1,6 +1,7 @@
 import { FaJava } from "react-icons/fa";
 import {
   SiAndroid,
+  SiAnthropic,
   SiAxios,
   SiCss3,
   SiDjango,
@@ -55,6 +56,7 @@ export const stackIcons = {
   android: { Icon: SiAndroid, label: "Android" },
   axios: { Icon: SiAxios, label: "Axios" },
   bash: { Icon: SiGnubash, label: "Bash" },
+  "claude-code": { Icon: SiAnthropic, label: "Claude Code" },
   css: { Icon: SiCss3, label: "CSS" },
   expo: { Icon: SiExpo, label: "Expo" },
   ffmpeg: { Icon: SiFfmpeg, label: "FFmpeg" },
