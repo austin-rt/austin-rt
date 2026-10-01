@@ -6,7 +6,7 @@ import { FaDev } from 'react-icons/fa';
 import { RefContext } from '../../context/RefContext';
 
 const Footer = () => {
-  const { home, about, projects, openSource, experience, contact, scrollTo } =
+  const { home, about, projects, openSource, contact, scrollTo } =
     useContext(RefContext);
   return (
     <footer>
@@ -47,13 +47,6 @@ const Footer = () => {
           }}
         >
           Open Source
-        </li>
-        <li
-          onClick={() => {
-            scrollTo(experience);
-          }}
-        >
-          My Experience
         </li>
         <li
           onClick={() => {

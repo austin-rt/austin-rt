@@ -5,7 +5,6 @@ import { RefProvider } from './context/RefContext';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
-import Experience from './components/Experience/Experience';
 import Projects from "./components/Projects/Projects";
 import OpenSource from "./components/OpenSource/OpenSource";
 import Contact from './components/Contact/Contact';
@@ -23,7 +22,6 @@ function App() {
       <About />
       <Projects />
       <OpenSource />
-      <Experience />
       <Contact />
       <Footer />
     </RefProvider>

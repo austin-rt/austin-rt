@@ -7,7 +7,6 @@ export const RefProvider = ({ children }) => {
   const about = useRef(null);
   const projects = useRef(null);
   const openSource = useRef(null);
-  const experience = useRef(null);
   const contact = useRef(null);
 
   const scrollTo = (section) => {
@@ -22,7 +21,6 @@ export const RefProvider = ({ children }) => {
     about: about,
     projects: projects,
     openSource: openSource,
-    experience: experience,
     contact: contact,
     scrollTo: scrollTo,
   };

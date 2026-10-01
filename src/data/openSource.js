@@ -9,8 +9,8 @@ export const contributions = [
     project: "KeepingYouAwake",
     summary:
       "Activation durations that end at a time of day, the feature requested in upstream issue #161.",
-    href: "https://github.com/austin-rt/KeepingYouAwake/tree/until-time",
-    state: "fork",
+    href: "https://github.com/newmarcel/KeepingYouAwake/pull/263",
+    state: "open",
     date: "2026-09",
     language: "Objective-C",
   },

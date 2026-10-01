@@ -3,13 +3,12 @@ import { useState, useContext } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { FaCodeBranch } from "react-icons/fa";
 import { RefContext } from "../../context/RefContext";
 
 const Nav = () => {
-  const { home, about, projects, openSource, experience, contact, scrollTo } =
+  const { home, about, projects, openSource, contact, scrollTo } =
     useContext(RefContext);
   const [activeNav, setActiveNav] = useState("#");
 
@@ -18,7 +17,6 @@ const Nav = () => {
     { hash: "#about", label: "About", ref: about, Icon: AiOutlineUser },
     { hash: "#projects", label: "Projects", ref: projects, Icon: BsFillBriefcaseFill },
     { hash: "#open-source", label: "Open Source", ref: openSource, Icon: FaCodeBranch },
-    { hash: "#experience", label: "Experience", ref: experience, Icon: BiBook },
     { hash: "#contact", label: "Contact", ref: contact, Icon: AiFillMail },
   ];
 
