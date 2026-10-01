@@ -70,6 +70,7 @@ export const projects = [
       "prisma",
       "redis",
       "graphql",
+      "voyage",
       "vercel",
     ],
     image: whoClinches,

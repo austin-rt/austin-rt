@@ -33,7 +33,7 @@ import {
   SiVercel,
   SiZod,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandReactNative, TbSailboat } from "react-icons/tb";
 
 // Slug -> icon + label. Projects reference stack entries by slug so the data
 // files stay plain objects with no JSX in them. List a project's core
@@ -75,5 +75,7 @@ export const stackIcons = {
   tailwind: { Icon: SiTailwindcss, label: "Tailwind CSS" },
   typescript: { Icon: SiTypescript, label: "TypeScript" },
   vercel: { Icon: SiVercel, label: "Vercel" },
+  // No brand icon exists for Voyage AI in react-icons; the sailboat stands in.
+  voyage: { Icon: TbSailboat, label: "Voyage AI" },
   zod: { Icon: SiZod, label: "Zod" },
 };
