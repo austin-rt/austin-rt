@@ -1,5 +1,5 @@
 import "./Projects.css";
-import { useContext } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { RefContext } from "../../context/RefContext";
 import { projects } from "../../data/projects";
 import { stackIcons } from "../../data/stackIcons";
@@ -7,6 +7,17 @@ import { linkTypes } from "../../data/linkTypes";
 
 const Projects = () => {
   const { projects: sectionRef } = useContext(RefContext);
+
+  // Hover shows a tech's name through CSS. Touch has no hover, so a tap opens
+  // the same tooltip for a moment.
+  const [openTip, setOpenTip] = useState(null);
+  const tipTimer = useRef(null);
+  useEffect(() => () => clearTimeout(tipTimer.current), []);
+  const showTip = (key) => {
+    setOpenTip(key);
+    clearTimeout(tipTimer.current);
+    tipTimer.current = setTimeout(() => setOpenTip(null), 1800);
+  };
 
   return (
     <section id="projects" ref={sectionRef}>
@@ -54,10 +65,19 @@ const Projects = () => {
                 <ul className="projects__stack" aria-label="Built with">
                   {project.stack.map((slug) => {
                     const { Icon, label } = stackIcons[slug];
+                    const tipKey = `${project.slug}:${slug}`;
                     return (
-                      <li key={slug} className="projects__stack-icon" title={label}>
+                      <li
+                        key={slug}
+                        className={
+                          openTip === tipKey
+                            ? "projects__stack-icon is-open"
+                            : "projects__stack-icon"
+                        }
+                        onTouchStart={() => showTip(tipKey)}
+                      >
                         <Icon aria-hidden="true" focusable="false" />
-                        <span className="visually-hidden">{label}</span>
+                        <span className="projects__stack-tip">{label}</span>
                       </li>
                     );
                   })}
