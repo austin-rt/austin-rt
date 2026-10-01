@@ -1,5 +1,21 @@
 import { FaJava } from "react-icons/fa";
 import {
+  SiAmazonapigateway,
+  SiAmazoncloudwatch,
+  SiAmazonrds,
+  SiAmazons3,
+  SiAmazonsqs,
+  SiAuth0,
+  SiAwslambda,
+  SiBitbucket,
+  SiDatadog,
+  SiMockserviceworker,
+  SiOpenapiinitiative,
+  SiShadcnui,
+  SiSnyk,
+  SiTestinglibrary,
+  SiVite,
+  SiVitest,
   SiAndroid,
   SiAnthropic,
   SiAxios,
@@ -45,7 +61,16 @@ import {
   SiVercel,
   SiZod,
 } from "react-icons/si";
-import { TbBrandReactNative, TbSailboat, TbVectorTriangle } from "react-icons/tb";
+import {
+  TbArrowsSplit2,
+  TbBrandAws,
+  TbBrandReactNative,
+  TbRocket,
+  TbRoute,
+  TbSailboat,
+  TbTable,
+  TbVectorTriangle,
+} from "react-icons/tb";
 
 // Slug -> icon + label. Projects reference stack entries by slug so the data
 // files stay plain objects with no JSX in them. List a project's core
@@ -100,6 +125,28 @@ export const stackIcons = {
   rag: { Icon: TbVectorTriangle, label: "RAG pipelines" },
   sequelize: { Icon: SiSequelize, label: "Sequelize" },
   vue: { Icon: SiVuedotjs, label: "Vue.js" },
+  // AWS. Services without a brand icon in react-icons use a neutral stand-in.
+  "aws-lambda": { Icon: SiAwslambda, label: "AWS Lambda" },
+  "api-gateway": { Icon: SiAmazonapigateway, label: "API Gateway" },
+  "step-functions": { Icon: TbRoute, label: "Step Functions" },
+  eventbridge: { Icon: TbArrowsSplit2, label: "EventBridge" },
+  "sqs-sns": { Icon: SiAmazonsqs, label: "SQS & SNS" },
+  aurora: { Icon: SiAmazonrds, label: "Aurora" },
+  "s3-cloudfront": { Icon: SiAmazons3, label: "S3/CloudFront" },
+  "aws-sam": { Icon: TbBrandAws, label: "AWS SAM" },
+  cloudwatch: { Icon: SiAmazoncloudwatch, label: "CloudWatch" },
+  "ag-grid": { Icon: TbTable, label: "AG Grid" },
+  auth0: { Icon: SiAuth0, label: "Auth0" },
+  bitbucket: { Icon: SiBitbucket, label: "Bitbucket" },
+  datadog: { Icon: SiDatadog, label: "Datadog" },
+  logrocket: { Icon: TbRocket, label: "LogRocket" },
+  msw: { Icon: SiMockserviceworker, label: "MSW" },
+  openapi: { Icon: SiOpenapiinitiative, label: "OpenAPI" },
+  shadcn: { Icon: SiShadcnui, label: "shadcn/ui" },
+  snyk: { Icon: SiSnyk, label: "Snyk" },
+  "testing-library": { Icon: SiTestinglibrary, label: "Testing Library" },
+  vite: { Icon: SiVite, label: "Vite" },
+  vitest: { Icon: SiVitest, label: "Vitest" },
   // No brand icon exists for Voyage AI in react-icons; the sailboat stands in.
   voyage: { Icon: TbSailboat, label: "Voyage AI" },
   zod: { Icon: SiZod, label: "Zod" },
