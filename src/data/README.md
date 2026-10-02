@@ -24,6 +24,15 @@ component changes are needed to add, reorder or retire an item.
 
 ## Add an open source contribution
 
-Append an object to `openSource.js`: `org`, `project`, one-sentence `summary`, `href` (the PR, or
-the fork branch), `state` (`"merged"`, `"open"` or `"fork"`), `date` as `YYYY-MM`, and `language`.
-Order is display order.
+Append an object to `openSource.json`. Order is display order.
+
+- `name`: the product or company, shown as the card title (`Bitwarden`)
+- `product`: the part of it you worked on (`Browser Extension`)
+- `summary`: one sentence
+- `language`: the main language of the change
+- `href`: the pull request link, `https://github.com/owner/repo/pull/123`
+
+The card shows the repo from `href`. On page load the site asks the GitHub search API for
+austin-rt's PRs in those repos (see `contributionStatus.js`) and gives each card its PR's status
+badge and date: the merge month for a merged PR, otherwise the month it opened. If GitHub can't be
+reached the card shows without a badge or date.

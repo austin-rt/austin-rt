@@ -1,14 +1,20 @@
 import "./OpenSource.css";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { RefContext } from "../../context/RefContext";
-import { contributions } from "../../data/openSource";
+import contributions from "../../data/openSource.json";
+import {
+  PR_STATE,
+  cardsFrom,
+  fetchPullRequests,
+} from "../../data/contributionStatus";
 import Pill from "../shared/Pill";
 
 const STATE = {
-  merged: { label: "Merged", tone: "primary" },
-  open: { label: "Open PR", tone: "light" },
-  fork: { label: "Fork", tone: "alt" },
+  [PR_STATE.merged]: { label: "Merged", tone: "primary" },
+  [PR_STATE.open]: { label: "Open PR", tone: "light" },
+  [PR_STATE.draft]: { label: "Draft PR", tone: "alt" },
+  [PR_STATE.closed]: { label: "Closed", tone: "alt" },
 };
 
 const MONTHS = [
@@ -23,6 +29,17 @@ const formatDate = (yyyyMm) => {
 
 const OpenSource = () => {
   const { openSource: sectionRef } = useContext(RefContext);
+  const [cards, setCards] = useState(() => cardsFrom(contributions, null));
+
+  useEffect(() => {
+    let active = true;
+    fetchPullRequests(contributions)
+      .then((items) => active && setCards(cardsFrom(contributions, items)))
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, []);
 
   return (
     <section id="open-source" ref={sectionRef}>
@@ -30,7 +47,7 @@ const OpenSource = () => {
       <h2>Open Source</h2>
 
       <ul className="container open-source__list">
-        {contributions.map((item) => {
+        {cards.map((item) => {
           const state = STATE[item.state];
           return (
             <li className="open-source__item" key={item.href}>
@@ -41,14 +58,18 @@ const OpenSource = () => {
                 rel="noopener noreferrer"
               >
                 <div className="open-source__project">
-                  <span className="open-source__org">{item.org}/</span>
-                  <span className="open-source__name">{item.project}</span>
-                  <span className="open-source__language">{item.language}</span>
+                  <h3 className="open-source__name">{item.name}</h3>
+                  <span className="open-source__product">{item.product}</span>
+                  <span className="open-source__repo">
+                    {item.repo} · {item.language}
+                  </span>
                 </div>
                 <p className="open-source__summary">{item.summary}</p>
                 <div className="open-source__meta">
-                  <Pill tone={state.tone}>{state.label}</Pill>
-                  <time dateTime={item.date}>{formatDate(item.date)}</time>
+                  {state && <Pill tone={state.tone}>{state.label}</Pill>}
+                  {item.date && (
+                    <time dateTime={item.date}>{formatDate(item.date)}</time>
+                  )}
                   <FiExternalLink
                     className="open-source__external"
                     aria-hidden="true"

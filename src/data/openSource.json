@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Bitwarden",
+    "product": "Browser Extension",
+    "summary": "A keyboard shortcut that cycles through logged-in accounts in the browser extension, opening unlock when the next account is locked.",
+    "language": "TypeScript",
+    "href": "https://github.com/bitwarden/clients/pull/23626"
+  },
+  {
+    "name": "Rocket.Chat",
+    "product": "GitHub App",
+    "summary": "PR Actions buttons now open the PR view in one click instead of posting the /github command to the room, with a setting to turn each button off.",
+    "language": "TypeScript",
+    "href": "https://github.com/RocketChat/Apps.Github22/pull/159"
+  },
+  {
+    "name": "KeepingYouAwake",
+    "product": "macOS App",
+    "summary": "Activation durations that end at a time of day, the feature requested in upstream issue #161.",
+    "language": "Objective-C",
+    "href": "https://github.com/newmarcel/KeepingYouAwake/pull/263"
+  },
+  {
+    "name": "Calibre-Web-Automated",
+    "product": "Ebook Server",
+    "summary": "Fixed reverse-proxy detection so Kobo sync works behind Cloudflare Tunnel.",
+    "language": "Python",
+    "href": "https://github.com/crocodilestick/Calibre-Web-Automated/pull/1143"
+  },
+  {
+    "name": "Calibre-Web",
+    "product": "Ebook Server",
+    "summary": "The same reverse-proxy fix, submitted to the original project.",
+    "language": "Python",
+    "href": "https://github.com/janeczku/calibre-web/pull/3595"
+  },
+  {
+    "name": "city-timezones",
+    "product": "npm Package",
+    "summary": "Added Oxford, Starkville and College Station so Who Clinches can resolve kickoff time zones.",
+    "language": "JavaScript",
+    "href": "https://github.com/kevinroberts/city-timezones/pull/37"
+  }
+]
