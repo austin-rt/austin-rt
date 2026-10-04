@@ -1,5 +1,12 @@
 [
   {
+    "name": "Keeper.sh",
+    "product": "Calendar Sync",
+    "summary": "Per-calendar exclusion rules that keep events out of a sync by status (busy, free, tentative) or title keyword, the feature requested in upstream issue #42.",
+    "language": "TypeScript",
+    "href": "https://github.com/ridafkih/keeper.sh/pull/1033"
+  },
+  {
     "name": "Bitwarden",
     "product": "Browser Extension",
     "summary": "A keyboard shortcut that cycles through logged-in accounts in the browser extension, opening unlock when the next account is locked.",
