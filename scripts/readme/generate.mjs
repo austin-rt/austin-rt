@@ -4,6 +4,7 @@ import { writeFile } from "node:fs/promises";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { BsFileEarmarkText, BsGlobe } from "react-icons/bs";
+import { GoGitMerge, GoGitPullRequest, GoGitPullRequestClosed, GoGitPullRequestDraft } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { fileURLToPath } from "node:url";
 import { about, contactOptions, hero, sections, SITE_URL } from "../../src/data/profile.js";
@@ -11,7 +12,7 @@ import { projects } from "../../src/data/projects.js";
 import contributions from "../../src/data/openSource.json";
 import { stackIcons } from "../../src/data/stackIcons.js";
 import { linkTypes } from "../../src/data/linkTypes.js";
-import { cardsFrom, fetchPullRequests } from "../../src/data/contributionStatus.js";
+import { PR_STATE, cardsFrom, fetchPullRequests } from "../../src/data/contributionStatus.js";
 import { API } from "../../src/utils/constants.js";
 import { renderReadme } from "../../src/readme/renderReadme.js";
 
@@ -45,6 +46,14 @@ const badges = {
   site: badge(new URL(SITE_URL).host, BsGlobe, "84A98C"),
   resume: badge("Resume", BsFileEarmarkText, "52796F"),
   email: badge("Email", MdOutlineEmail, "52796F"),
+  // GitHub's own PR state colours and icons.
+  pr: {
+    [PR_STATE.merged]: (label) => badge(label, GoGitMerge, "8957E5"),
+    [PR_STATE.open]: (label) => badge(label, GoGitPullRequest, "238636"),
+    [PR_STATE.draft]: (label) => badge(label, GoGitPullRequestDraft, "6E7781"),
+    [PR_STATE.closed]: (label) => badge(label, GoGitPullRequestClosed, "CF222E"),
+    unknown: (label) => badge(label, GoGitPullRequest, "444D56"),
+  },
 };
 
 const labelsOf = (table) => Object.fromEntries(Object.entries(table).map(([key, { label }]) => [key, label]));

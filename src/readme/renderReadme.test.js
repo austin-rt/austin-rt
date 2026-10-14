@@ -20,6 +20,7 @@ const card = (overrides = {}) => ({
   language: "TypeScript",
   href: "https://github.com/o/r/pull/1",
   repo: "o/r",
+  number: 1,
   ...overrides,
 });
 
@@ -34,7 +35,15 @@ const render = (overrides = {}) =>
     contactOptions: [],
     stackLabels: { react: "React", vercel: "Vercel" },
     linkLabels: { web: "Website", repo: "GitHub" },
-    badges: { site: "site.svg", resume: "resume.svg", web: "web.svg", repo: "repo.svg", email: "email.svg", phone: "phone.svg" },
+    badges: {
+      site: "site.svg",
+      resume: "resume.svg",
+      web: "web.svg",
+      repo: "repo.svg",
+      email: "email.svg",
+      phone: "phone.svg",
+      pr: { [PR_STATE.merged]: (label) => `merged:${label}`, unknown: (label) => `unknown:${label}` },
+    },
     siteUrl: "https://me.example",
     resumeUrl: "https://resume.example",
     ...overrides,
@@ -69,12 +78,19 @@ describe("renderReadme", () => {
     expect(render()).not.toContain('<a href="https://thing.example"><img');
   });
 
-  it("shows a contribution's PR status and month", () => {
+  it("badges a contribution with its PR state and month, linked to the PR", () => {
     const readme = render({ cards: [card({ state: PR_STATE.merged, date: "2026-10" })] });
-    expect(readme).toContain(`\`o/r\` · TypeScript · ${PR_LABEL[PR_STATE.merged]} Oct 2026`);
+    const label = `${PR_LABEL[PR_STATE.merged]} Oct 2026`;
+    expect(readme).toContain(`[![${label}](merged:${label})](https://github.com/o/r/pull/1)`);
   });
 
-  it("shows a contribution without status when GitHub couldn't be reached", () => {
-    expect(render()).toContain("`o/r` · TypeScript<br />Did a thing.");
+  it("gives a contribution a plain PR badge when GitHub couldn't be reached", () => {
+    expect(render()).toContain("[![Pull Request](unknown:Pull Request)](https://github.com/o/r/pull/1)");
+  });
+
+  it("refreshes the PR preview image when the PR's state changes", () => {
+    const merged = render({ cards: [card({ state: PR_STATE.merged, date: "2026-10" })] });
+    expect(merged).toContain(`https://opengraph.githubassets.com/${PR_STATE.merged}/o/r/pull/1`);
+    expect(render()).toContain("https://opengraph.githubassets.com/pr/o/r/pull/1");
   });
 });

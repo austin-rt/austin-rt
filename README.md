@@ -122,13 +122,89 @@ Built with HTML · CSS · TypeScript · GitHub Pages
 
 ## Open Source
 
-- **[Keeper.sh: Calendar Sync](https://github.com/ridafkih/keeper.sh/pull/1033)**<br />`ridafkih/keeper.sh` · TypeScript · Merged Oct 2026<br />Per-calendar exclusion rules that keep events out of a sync by status (busy, free, tentative) or title keyword, the feature requested in upstream issue #42.
-- **[Bitwarden: Browser Extension](https://github.com/bitwarden/clients/pull/23626)**<br />`bitwarden/clients` · TypeScript · Closed Oct 2026<br />A keyboard shortcut that cycles through logged-in accounts in the browser extension, opening unlock when the next account is locked.
-- **[Rocket.Chat: GitHub App](https://github.com/RocketChat/Apps.Github22/pull/159)**<br />`RocketChat/Apps.Github22` · TypeScript · Open PR Oct 2026<br />PR Actions buttons now open the PR view in one click instead of posting the /github command to the room, with a setting to turn each button off.
-- **[KeepingYouAwake: macOS App](https://github.com/newmarcel/KeepingYouAwake/pull/263)**<br />`newmarcel/KeepingYouAwake` · Objective-C · Open PR Sep 2026<br />Activation durations that end at a time of day, the feature requested in upstream issue #161.
-- **[Calibre-Web-Automated: Ebook Server](https://github.com/crocodilestick/Calibre-Web-Automated/pull/1143)**<br />`crocodilestick/Calibre-Web-Automated` · Python · Merged Aug 2026<br />Fixed reverse-proxy detection so Kobo sync works behind Cloudflare Tunnel.
-- **[Calibre-Web: Ebook Server](https://github.com/janeczku/calibre-web/pull/3595)**<br />`janeczku/calibre-web` · Python · Open PR Feb 2026<br />The same reverse-proxy fix, submitted to the original project.
-- **[city-timezones: npm Package](https://github.com/kevinroberts/city-timezones/pull/37)**<br />`kevinroberts/city-timezones` · JavaScript · Merged Dec 2025<br />Added Oxford, Starkville and College Station so Who Clinches can resolve kickoff time zones.
+### [Keeper.sh](https://github.com/ridafkih/keeper.sh/pull/1033)
+
+<a href="https://github.com/ridafkih/keeper.sh/pull/1033"><img src="https://opengraph.githubassets.com/merged/ridafkih/keeper.sh/pull/1033" width="600" alt="ridafkih/keeper.sh pull request 1033" /></a>
+
+**Calendar Sync**
+
+Per-calendar exclusion rules that keep events out of a sync by status (busy, free, tentative) or title keyword, the feature requested in upstream issue #42.
+
+Built in TypeScript · `ridafkih/keeper.sh`
+
+[![Merged Oct 2026](https://img.shields.io/badge/Merged%20Oct%202026-8957E5?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTMuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTEyLjUgNmEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNS43NSA2LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgNi41Wm0wIDE0LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgMjFabTEyLjUtNmExLjc1IDEuNzUgMCAxIDAtLjAwMS0zLjUwMUExLjc1IDEuNzUgMCAwIDAgMTguMjUgMTVaIj48L3BhdGg%2BPHBhdGggZD0iTTYuNSA3LjI1YzAgMi45IDIuMzUgNS4yNSA1LjI1IDUuMjVoNC41VjE0aC00LjVBNi43NSA2Ljc1IDAgMCAxIDUgNy4yNVoiPjwvcGF0aD48cGF0aCBkPSJNNS43NSAxNi43NUEuNzUuNzUgMCAwIDEgNSAxNlY4YS43NS43NSAwIDAgMSAxLjUgMHY4YS43NS43NSAwIDAgMS0uNzUuNzVaIj48L3BhdGg%2BPC9zdmc%2B)](https://github.com/ridafkih/keeper.sh/pull/1033)
+
+### [Bitwarden](https://github.com/bitwarden/clients/pull/23626)
+
+<a href="https://github.com/bitwarden/clients/pull/23626"><img src="https://opengraph.githubassets.com/closed/bitwarden/clients/pull/23626" width="600" alt="bitwarden/clients pull request 23626" /></a>
+
+**Browser Extension**
+
+A keyboard shortcut that cycles through logged-in accounts in the browser extension, opening unlock when the next account is locked.
+
+Built in TypeScript · `bitwarden/clients`
+
+[![Closed Oct 2026](https://img.shields.io/badge/Closed%20Oct%202026-CF222E?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjIuMjY2IDIuNzExYS43NS43NSAwIDEgMC0xLjA2MS0xLjA2bC0xLjk4MyAxLjk4My0xLjk4NC0xLjk4M2EuNzUuNzUgMCAxIDAtMS4wNiAxLjA2bDEuOTgzIDEuOTgzLTEuOTgzIDEuOTg0YS43NS43NSAwIDAgMCAxLjA2IDEuMDZsMS45ODQtMS45ODMgMS45ODMgMS45ODNhLjc1Ljc1IDAgMCAwIDEuMDYtMS4wNmwtMS45ODMtMS45ODQgMS45ODQtMS45ODNaTTQuNzUgMS41YTMuMjUgMy4yNSAwIDAgMSAuNzQ1IDYuNDE0QS44MjcuODI3IDAgMCAxIDUuNSA4djhhLjgyNy44MjcgMCAwIDEtLjAwNS4wODZBMy4yNSAzLjI1IDAgMCAxIDQuNzUgMjIuNWEzLjI1IDMuMjUgMCAwIDEtLjc0NS02LjQxNEEuODI3LjgyNyAwIDAgMSA0IDE2VjhjMC0uMDI5LjAwMi0uMDU3LjAwNS0uMDg2QTMuMjUgMy4yNSAwIDAgMSA0Ljc1IDEuNVpNMTYgMTkuMjVhMy4yNTIgMy4yNTIgMCAwIDEgMi41LTMuMTYzVjkuNjI1YS43NS43NSAwIDAgMSAxLjUgMHY2LjQ2MmEzLjI1MiAzLjI1MiAwIDAgMS0uNzUgNi40MTNBMy4yNSAzLjI1IDAgMCAxIDE2IDE5LjI1Wk0zIDQuNzVhMS43NSAxLjc1IDAgMSAwIDMuNTAxLS4wMDFBMS43NSAxLjc1IDAgMCAwIDMgNC43NVptMCAxNC41YTEuNzUgMS43NSAwIDEgMCAzLjUwMS0uMDAxQTEuNzUgMS43NSAwIDAgMCAzIDE5LjI1Wm0xNi4yNS0xLjc1YTEuNzUgMS43NSAwIDEgMCAuMDAxIDMuNTAxIDEuNzUgMS43NSAwIDAgMC0uMDAxLTMuNTAxWiI%2BPC9wYXRoPjwvc3ZnPg%3D%3D)](https://github.com/bitwarden/clients/pull/23626)
+
+### [Rocket.Chat](https://github.com/RocketChat/Apps.Github22/pull/159)
+
+<a href="https://github.com/RocketChat/Apps.Github22/pull/159"><img src="https://opengraph.githubassets.com/open/RocketChat/Apps.Github22/pull/159" width="600" alt="RocketChat/Apps.Github22 pull request 159" /></a>
+
+**GitHub App**
+
+PR Actions buttons now open the PR view in one click instead of posting the /github command to the room, with a setting to turn each button off.
+
+Built in TypeScript · `RocketChat/Apps.Github22`
+
+[![Open PR Oct 2026](https://img.shields.io/badge/Open%20PR%20Oct%202026-238636?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTkuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTE0LjUgMGEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNC43NSAzYTEuNzUgMS43NSAwIDEgMCAuMDAxIDMuNTAxQTEuNzUgMS43NSAwIDAgMCA0Ljc1IDNabTAgMTQuNWExLjc1IDEuNzUgMCAxIDAgLjAwMSAzLjUwMUExLjc1IDEuNzUgMCAwIDAgNC43NSAxNy41Wm0xNC41IDBhMS43NSAxLjc1IDAgMSAwIC4wMDEgMy41MDEgMS43NSAxLjc1IDAgMCAwLS4wMDEtMy41MDFaIj48L3BhdGg%2BPHBhdGggZD0iTTEzLjQwNSAxLjcyYS43NS43NSAwIDAgMSAwIDEuMDZMMTIuMTg1IDRoNC4wNjVBMy43NSAzLjc1IDAgMCAxIDIwIDcuNzV2OC43NWEuNzUuNzUgMCAwIDEtMS41IDBWNy43NWEyLjI1IDIuMjUgMCAwIDAtMi4yNS0yLjI1aC00LjA2NGwxLjIyIDEuMjJhLjc1Ljc1IDAgMCAxLTEuMDYxIDEuMDZsLTIuNS0yLjVhLjc1Ljc1IDAgMCAxIDAtMS4wNmwyLjUtMi41YS43NS43NSAwIDAgMSAxLjA2IDBaTTQuNzUgNy4yNUEuNzUuNzUgMCAwIDEgNS41IDh2OEEuNzUuNzUgMCAwIDEgNCAxNlY4YS43NS43NSAwIDAgMSAuNzUtLjc1WiI%2BPC9wYXRoPjwvc3ZnPg%3D%3D)](https://github.com/RocketChat/Apps.Github22/pull/159)
+
+### [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake/pull/263)
+
+<a href="https://github.com/newmarcel/KeepingYouAwake/pull/263"><img src="https://opengraph.githubassets.com/open/newmarcel/KeepingYouAwake/pull/263" width="600" alt="newmarcel/KeepingYouAwake pull request 263" /></a>
+
+**macOS App**
+
+Activation durations that end at a time of day, the feature requested in upstream issue #161.
+
+Built in Objective-C · `newmarcel/KeepingYouAwake`
+
+[![Open PR Sep 2026](https://img.shields.io/badge/Open%20PR%20Sep%202026-238636?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTkuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTE0LjUgMGEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNC43NSAzYTEuNzUgMS43NSAwIDEgMCAuMDAxIDMuNTAxQTEuNzUgMS43NSAwIDAgMCA0Ljc1IDNabTAgMTQuNWExLjc1IDEuNzUgMCAxIDAgLjAwMSAzLjUwMUExLjc1IDEuNzUgMCAwIDAgNC43NSAxNy41Wm0xNC41IDBhMS43NSAxLjc1IDAgMSAwIC4wMDEgMy41MDEgMS43NSAxLjc1IDAgMCAwLS4wMDEtMy41MDFaIj48L3BhdGg%2BPHBhdGggZD0iTTEzLjQwNSAxLjcyYS43NS43NSAwIDAgMSAwIDEuMDZMMTIuMTg1IDRoNC4wNjVBMy43NSAzLjc1IDAgMCAxIDIwIDcuNzV2OC43NWEuNzUuNzUgMCAwIDEtMS41IDBWNy43NWEyLjI1IDIuMjUgMCAwIDAtMi4yNS0yLjI1aC00LjA2NGwxLjIyIDEuMjJhLjc1Ljc1IDAgMCAxLTEuMDYxIDEuMDZsLTIuNS0yLjVhLjc1Ljc1IDAgMCAxIDAtMS4wNmwyLjUtMi41YS43NS43NSAwIDAgMSAxLjA2IDBaTTQuNzUgNy4yNUEuNzUuNzUgMCAwIDEgNS41IDh2OEEuNzUuNzUgMCAwIDEgNCAxNlY4YS43NS43NSAwIDAgMSAuNzUtLjc1WiI%2BPC9wYXRoPjwvc3ZnPg%3D%3D)](https://github.com/newmarcel/KeepingYouAwake/pull/263)
+
+### [Calibre-Web-Automated](https://github.com/crocodilestick/Calibre-Web-Automated/pull/1143)
+
+<a href="https://github.com/crocodilestick/Calibre-Web-Automated/pull/1143"><img src="https://opengraph.githubassets.com/merged/crocodilestick/Calibre-Web-Automated/pull/1143" width="600" alt="crocodilestick/Calibre-Web-Automated pull request 1143" /></a>
+
+**Ebook Server**
+
+Fixed reverse-proxy detection so Kobo sync works behind Cloudflare Tunnel.
+
+Built in Python · `crocodilestick/Calibre-Web-Automated`
+
+[![Merged Aug 2026](https://img.shields.io/badge/Merged%20Aug%202026-8957E5?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTMuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTEyLjUgNmEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNS43NSA2LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgNi41Wm0wIDE0LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgMjFabTEyLjUtNmExLjc1IDEuNzUgMCAxIDAtLjAwMS0zLjUwMUExLjc1IDEuNzUgMCAwIDAgMTguMjUgMTVaIj48L3BhdGg%2BPHBhdGggZD0iTTYuNSA3LjI1YzAgMi45IDIuMzUgNS4yNSA1LjI1IDUuMjVoNC41VjE0aC00LjVBNi43NSA2Ljc1IDAgMCAxIDUgNy4yNVoiPjwvcGF0aD48cGF0aCBkPSJNNS43NSAxNi43NUEuNzUuNzUgMCAwIDEgNSAxNlY4YS43NS43NSAwIDAgMSAxLjUgMHY4YS43NS43NSAwIDAgMS0uNzUuNzVaIj48L3BhdGg%2BPC9zdmc%2B)](https://github.com/crocodilestick/Calibre-Web-Automated/pull/1143)
+
+### [Calibre-Web](https://github.com/janeczku/calibre-web/pull/3595)
+
+<a href="https://github.com/janeczku/calibre-web/pull/3595"><img src="https://opengraph.githubassets.com/open/janeczku/calibre-web/pull/3595" width="600" alt="janeczku/calibre-web pull request 3595" /></a>
+
+**Ebook Server**
+
+The same reverse-proxy fix, submitted to the original project.
+
+Built in Python · `janeczku/calibre-web`
+
+[![Open PR Feb 2026](https://img.shields.io/badge/Open%20PR%20Feb%202026-238636?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTkuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTE0LjUgMGEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNC43NSAzYTEuNzUgMS43NSAwIDEgMCAuMDAxIDMuNTAxQTEuNzUgMS43NSAwIDAgMCA0Ljc1IDNabTAgMTQuNWExLjc1IDEuNzUgMCAxIDAgLjAwMSAzLjUwMUExLjc1IDEuNzUgMCAwIDAgNC43NSAxNy41Wm0xNC41IDBhMS43NSAxLjc1IDAgMSAwIC4wMDEgMy41MDEgMS43NSAxLjc1IDAgMCAwLS4wMDEtMy41MDFaIj48L3BhdGg%2BPHBhdGggZD0iTTEzLjQwNSAxLjcyYS43NS43NSAwIDAgMSAwIDEuMDZMMTIuMTg1IDRoNC4wNjVBMy43NSAzLjc1IDAgMCAxIDIwIDcuNzV2OC43NWEuNzUuNzUgMCAwIDEtMS41IDBWNy43NWEyLjI1IDIuMjUgMCAwIDAtMi4yNS0yLjI1aC00LjA2NGwxLjIyIDEuMjJhLjc1Ljc1IDAgMCAxLTEuMDYxIDEuMDZsLTIuNS0yLjVhLjc1Ljc1IDAgMCAxIDAtMS4wNmwyLjUtMi41YS43NS43NSAwIDAgMSAxLjA2IDBaTTQuNzUgNy4yNUEuNzUuNzUgMCAwIDEgNS41IDh2OEEuNzUuNzUgMCAwIDEgNCAxNlY4YS43NS43NSAwIDAgMSAuNzUtLjc1WiI%2BPC9wYXRoPjwvc3ZnPg%3D%3D)](https://github.com/janeczku/calibre-web/pull/3595)
+
+### [city-timezones](https://github.com/kevinroberts/city-timezones/pull/37)
+
+<a href="https://github.com/kevinroberts/city-timezones/pull/37"><img src="https://opengraph.githubassets.com/merged/kevinroberts/city-timezones/pull/37" width="600" alt="kevinroberts/city-timezones pull request 37" /></a>
+
+**npm Package**
+
+Added Oxford, Starkville and College Station so Who Clinches can resolve kickoff time zones.
+
+Built in JavaScript · `kevinroberts/city-timezones`
+
+[![Merged Dec 2025](https://img.shields.io/badge/Merged%20Dec%202025-8957E5?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgY29sb3I9IiNmZmYiIHN0eWxlPSJjb2xvcjojZmZmIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTMuMjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFptLTEyLjUgNmEzLjI1IDMuMjUgMCAxIDEgNi41IDAgMy4yNSAzLjI1IDAgMCAxLTYuNSAwWm0wLTE0LjVhMy4yNSAzLjI1IDAgMSAxIDYuNSAwIDMuMjUgMy4yNSAwIDAgMS02LjUgMFpNNS43NSA2LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgNi41Wm0wIDE0LjVhMS43NSAxLjc1IDAgMSAwLS4wMDEtMy41MDFBMS43NSAxLjc1IDAgMCAwIDUuNzUgMjFabTEyLjUtNmExLjc1IDEuNzUgMCAxIDAtLjAwMS0zLjUwMUExLjc1IDEuNzUgMCAwIDAgMTguMjUgMTVaIj48L3BhdGg%2BPHBhdGggZD0iTTYuNSA3LjI1YzAgMi45IDIuMzUgNS4yNSA1LjI1IDUuMjVoNC41VjE0aC00LjVBNi43NSA2Ljc1IDAgMCAxIDUgNy4yNVoiPjwvcGF0aD48cGF0aCBkPSJNNS43NSAxNi43NUEuNzUuNzUgMCAwIDEgNSAxNlY4YS43NS43NSAwIDAgMSAxLjUgMHY4YS43NS43NSAwIDAgMS0uNzUuNzVaIj48L3BhdGg%2BPC9zdmc%2B)](https://github.com/kevinroberts/city-timezones/pull/37)
 
 ## Contact Me
 
