@@ -11,6 +11,9 @@ import { cardsFrom, fetchPullRequests } from "../../src/data/contributionStatus.
 import { API } from "../../src/utils/constants.js";
 import { renderReadme } from "../../src/readme/renderReadme.js";
 
+// The profile's banner; the site's header uses the headshot instead.
+const BANNER = "images/github-banner.png";
+
 const labelsOf = (table) => Object.fromEntries(Object.entries(table).map(([key, { label }]) => [key, label]));
 
 const pulls = await fetchPullRequests(contributions, process.env.GITHUB_TOKEN).catch((error) => {
@@ -20,6 +23,7 @@ const pulls = await fetchPullRequests(contributions, process.env.GITHUB_TOKEN).c
 
 const readme = renderReadme({
   hero,
+  banner: BANNER,
   about,
   sections,
   contactOptions,

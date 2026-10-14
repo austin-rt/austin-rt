@@ -5,10 +5,10 @@ export const GENERATED_NOTICE =
 
 const link = (label, href) => `[${label}](${href})`;
 
-const renderHero = ({ hero, siteUrl, resumeUrl }) => [
+const renderHero = ({ hero, banner, siteUrl, resumeUrl }) => [
   '<div align="center">',
   "",
-  `<img src="${hero.image}" width="180" alt="${hero.name}" />`,
+  `<img src="${banner}" alt="${hero.name}" />`,
   "",
   hero.greeting,
   "",

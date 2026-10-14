@@ -25,7 +25,8 @@ const card = (overrides = {}) => ({
 
 const render = (overrides = {}) =>
   renderReadme({
-    hero: { greeting: "Hi", name: "Me", role: "Dev", image: "src/assets/me.png" },
+    hero: { greeting: "Hi", name: "Me", role: "Dev" },
+    banner: "images/banner.png",
     about: { title: "About", paragraphs: ["One.", "Two."] },
     sections: { projects: { title: "Projects" }, openSource: { title: "Open Source" }, contact: { title: "Contact" } },
     projects: [project()],

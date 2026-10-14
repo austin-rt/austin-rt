@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="src/assets/2023-headshot-no-bg.png" width="180" alt="Austin Taylor" />
+<img src="images/github-banner.png" alt="Austin Taylor" />
 
 Hey there, I'm
 
