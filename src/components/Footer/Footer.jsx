@@ -1,6 +1,6 @@
 import './Footer.css';
 import { useContext } from 'react';
-import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsMedium } from 'react-icons/bs';
 import { DiNpm } from 'react-icons/di';
 import { FaDev } from 'react-icons/fa';
 import { RefContext } from '../../context/RefContext';
@@ -75,15 +75,6 @@ const Footer = () => {
           rel='noopener noreferrer'
         >
           <BsGithub />
-        </a>
-        <a
-          href='https://www.twitter.com/0xStink'
-          title='Twitter Link'
-          target='_blank'
-          className='icon'
-          rel='noopener noreferrer'
-        >
-          <BsTwitter />
         </a>
         <a
           href='https://austinrt.medium.com/'

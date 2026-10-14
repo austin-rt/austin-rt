@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsTwitter, BsMedium } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsMedium } from 'react-icons/bs';
 import { DiNpm } from 'react-icons/di';
 import { FaDev } from 'react-icons/fa';
 
@@ -22,15 +22,6 @@ const HeaderSocials = () => {
         rel='noopener noreferrer'
       >
         <BsLinkedin />
-      </a>
-      <a
-        href='https://www.twitter.com/0xStink'
-        title='Twitter Profile'
-        target='_blank'
-        className='icon'
-        rel='noopener noreferrer'
-      >
-        <BsTwitter />
       </a>
       <a
         href='https://austinrt.medium.com/'
