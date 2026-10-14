@@ -4,27 +4,20 @@ import { FiExternalLink } from "react-icons/fi";
 import { RefContext } from "../../context/RefContext";
 import contributions from "../../data/openSource.json";
 import {
+  PR_LABEL,
   PR_STATE,
   cardsFrom,
   fetchPullRequests,
+  formatMonth,
 } from "../../data/contributionStatus";
+import { sections } from "../../data/profile";
 import Pill from "../shared/Pill";
 
-const STATE = {
-  [PR_STATE.merged]: { label: "Merged", tone: "primary" },
-  [PR_STATE.open]: { label: "Open PR", tone: "light" },
-  [PR_STATE.draft]: { label: "Draft PR", tone: "alt" },
-  [PR_STATE.closed]: { label: "Closed", tone: "alt" },
-};
-
-const MONTHS = [
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
-];
-
-const formatDate = (yyyyMm) => {
-  const [year, month] = yyyyMm.split("-");
-  return `${MONTHS[Number(month) - 1]} ${year}`;
+const TONE = {
+  [PR_STATE.merged]: "primary",
+  [PR_STATE.open]: "light",
+  [PR_STATE.draft]: "alt",
+  [PR_STATE.closed]: "alt",
 };
 
 const OpenSource = () => {
@@ -43,13 +36,11 @@ const OpenSource = () => {
 
   return (
     <section id="open-source" ref={sectionRef}>
-      <h5>Giving Back</h5>
-      <h2>Open Source</h2>
+      <h5>{sections.openSource.kicker}</h5>
+      <h2>{sections.openSource.title}</h2>
 
       <ul className="container open-source__list">
-        {cards.map((item) => {
-          const state = STATE[item.state];
-          return (
+        {cards.map((item) => (
             <li className="open-source__item" key={item.href}>
               <a
                 className="open-source__link"
@@ -66,9 +57,11 @@ const OpenSource = () => {
                 </div>
                 <p className="open-source__summary">{item.summary}</p>
                 <div className="open-source__meta">
-                  {state && <Pill tone={state.tone}>{state.label}</Pill>}
+                  {item.state && (
+                    <Pill tone={TONE[item.state]}>{PR_LABEL[item.state]}</Pill>
+                  )}
                   {item.date && (
-                    <time dateTime={item.date}>{formatDate(item.date)}</time>
+                    <time dateTime={item.date}>{formatMonth(item.date)}</time>
                   )}
                   <FiExternalLink
                     className="open-source__external"
@@ -78,8 +71,8 @@ const OpenSource = () => {
                 </div>
               </a>
             </li>
-          );
-        })}
+          )
+        )}
       </ul>
     </section>
   );

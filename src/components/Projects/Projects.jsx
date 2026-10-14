@@ -4,6 +4,7 @@ import { RefContext } from "../../context/RefContext";
 import { projects } from "../../data/projects";
 import { stackIcons } from "../../data/stackIcons";
 import { linkTypes } from "../../data/linkTypes";
+import { sections } from "../../data/profile";
 
 const Projects = () => {
   const { projects: sectionRef } = useContext(RefContext);
@@ -21,8 +22,8 @@ const Projects = () => {
 
   return (
     <section id="projects" ref={sectionRef}>
-      <h5>Things I've Shipped</h5>
-      <h2>Projects</h2>
+      <h5>{sections.projects.kicker}</h5>
+      <h2>{sections.projects.title}</h2>
 
       <div className="container projects__container">
         {projects.map((project) => {

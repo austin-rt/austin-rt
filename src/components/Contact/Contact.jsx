@@ -5,6 +5,13 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { ImLinkedin } from 'react-icons/im';
 import { FiPhoneCall } from 'react-icons/fi';
 import { RefContext } from '../../context/RefContext';
+import { contactOptions, sections } from '../../data/profile';
+
+const CONTACT_ICONS = {
+  email: MdOutlineEmail,
+  linkedin: ImLinkedin,
+  phone: FiPhoneCall,
+};
 
 const Contact = () => {
   const [emailSent, setEmailSent] = useState(false);
@@ -42,46 +49,28 @@ const Contact = () => {
       id='contact'
       ref={contact}
     >
-      <h5>Let's Connect</h5>
-      <h2>Contact Me</h2>
+      <h5>{sections.contact.kicker}</h5>
+      <h2>{sections.contact.title}</h2>
 
       <div className='container contact__container'>
         <div className='contact__options'>
-          <a
-            href='mailto:austinrtaylor91@gmail.com?subject=Hi%20Austin!'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <article className='contact__option'>
-              <MdOutlineEmail className='contact__option-icon icon' />
-              <h4>Email</h4>
-              <p>Drop Me A Line</p>
-            </article>
-          </a>
-
-          <a
-            href='https://www.linkedin.com/in/austinrt'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <article className='contact__option'>
-              <ImLinkedin className='contact__option-icon icon' />
-              <h4>LinkedIn</h4>
-              <p>Send Me A Message</p>
-            </article>
-          </a>
-
-          <a
-            href='tel:+12292219699'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <article className='contact__option'>
-              <FiPhoneCall className='contact__option-icon icon' />
-              <h4>Phone</h4>
-              <p>Ring Me</p>
-            </article>
-          </a>
+          {contactOptions.map(({ type, title, cta, href }) => {
+            const Icon = CONTACT_ICONS[type];
+            return (
+              <a
+                key={type}
+                href={href}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <article className='contact__option'>
+                  <Icon className='contact__option-icon icon' />
+                  <h4>{title}</h4>
+                  <p>{cta}</p>
+                </article>
+              </a>
+            );
+          })}
         </div>
 
         <form

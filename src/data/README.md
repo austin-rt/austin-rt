@@ -1,7 +1,23 @@
 # Site content
 
-The Projects and Open Source sections render from the plain-object arrays in this folder. No
-component changes are needed to add, reorder or retire an item.
+The site renders from the data in this folder, and so does the GitHub profile README at the repo
+root. No component changes are needed to add, reorder or retire an item.
+
+- `profile.js`: hero, About paragraphs, section headings and contact options
+- `projects.js`: Projects
+- `openSource.json`: Open Source
+
+## Profile README
+
+The root `README.md` is generated. Never edit it by hand. `.github/workflows/readme.yml` runs
+`npm run readme` on every push to `main` that touches this folder, `src/assets`, `src/readme` or
+`scripts/readme`, and once a day to refresh the Open Source PR statuses, then commits the README if
+it changed. `vercel.json` skips the Vercel build for a commit that only changes `README.md`.
+
+- Layout lives in `src/readme/renderReadme.js`.
+- A contact option with `onGitHub: false` stays on the site and out of the README.
+- To preview locally: `GITHUB_TOKEN=$(gh auth token) npm run readme`. Without a token the GitHub
+  search API rate-limits quickly and the Open Source list is written without statuses.
 
 ## Add a project
 

@@ -4,6 +4,7 @@ import {
   PR_STATE,
   cardsFrom,
   fetchPullRequests,
+  formatMonth,
   parsePullUrl,
   searchQuery,
   stateOf,
@@ -110,5 +111,21 @@ describe("fetchPullRequests", () => {
     const items = [pull()];
     jest.spyOn(global, "fetch").mockResolvedValue({ ok: true, json: async () => ({ items }) });
     await expect(fetchPullRequests([entry()])).resolves.toBe(items);
+  });
+  it("sends the token only when one is given", async () => {
+    const fetchMock = jest.spyOn(global, "fetch").mockResolvedValue({ ok: true, json: async () => ({ items: [] }) });
+    await fetchPullRequests([entry()], "secret");
+    await fetchPullRequests([entry()]);
+    expect(fetchMock.mock.calls[0][1].headers.Authorization).toBe("Bearer secret");
+    expect(fetchMock.mock.calls[1][1].headers).not.toHaveProperty("Authorization");
+  });
+});
+
+describe("formatMonth", () => {
+  it.each([
+    ["2026-01", "Jan 2026"],
+    ["2025-12", "Dec 2025"],
+  ])("formats %s as %s", (yyyyMm, expected) => {
+    expect(formatMonth(yyyyMm)).toBe(expected);
   });
 });

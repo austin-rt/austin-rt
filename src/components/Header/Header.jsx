@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { RefContext } from '../../context/RefContext';
 import CallToAction from './CallToAction';
 import HeaderSocials from './HeaderSocials';
-import pfp from '../../assets/2023-headshot-no-bg.png';
+import { hero } from '../../data/profile';
 import ThemeSlider from './ThemeSlider';
 
 const Header = () => {
@@ -12,9 +12,9 @@ const Header = () => {
     <header ref={home}>
       <div className='container header__container'>
         <ThemeSlider />
-        <h5 className='text-light'>Hey there, I'm</h5>
-        <h1 className='header__name'>Austin Taylor</h1>
-        <h5 className='text-light'>and I'm a Software Developer.</h5>
+        <h5 className='text-light'>{hero.greeting}</h5>
+        <h1 className='header__name'>{hero.name}</h1>
+        <h5 className='text-light'>{hero.role}</h5>
         <CallToAction
           contact={contact}
           scrollTo={scrollTo}
@@ -22,7 +22,7 @@ const Header = () => {
         <HeaderSocials />
         <div className='pfp-container'>
           <img
-            src={pfp}
+            src={hero.image}
             className='pfp'
             alt='austin taylor'
           />

@@ -11,6 +11,24 @@ export const PR_STATE = {
   closed: "closed",
 };
 
+export const PR_LABEL = {
+  [PR_STATE.merged]: "Merged",
+  [PR_STATE.open]: "Open PR",
+  [PR_STATE.draft]: "Draft PR",
+  [PR_STATE.closed]: "Closed",
+};
+
+const MONTHS = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+
+// "2026-10" -> "Oct 2026"
+export const formatMonth = (yyyyMm) => {
+  const [year, month] = yyyyMm.split("-");
+  return `${MONTHS[Number(month) - 1]} ${year}`;
+};
+
 const PULL_URL = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/pull\/(\d+)$/;
 
 export const parsePullUrl = (href) => {
@@ -51,11 +69,12 @@ export const searchQuery = (contributions) => {
   return ["is:pr", `author:${GITHUB_USER}`, ...[...repos].map((repo) => `repo:${repo}`)].join(" ");
 };
 
-export const fetchPullRequests = async (contributions) => {
+// The README generator passes a token; the site calls without one.
+export const fetchPullRequests = async (contributions, token) => {
   const url = `${SEARCH_URL}?per_page=100&q=${encodeURIComponent(searchQuery(contributions))}`;
-  const response = await fetch(url, {
-    headers: { Accept: "application/vnd.github+json" },
-  });
+  const headers = { Accept: "application/vnd.github+json" };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  const response = await fetch(url, { headers });
   if (!response.ok) throw new Error(`GitHub search returned ${response.status}`);
   return (await response.json()).items;
 };
