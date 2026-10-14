@@ -34,6 +34,7 @@ const render = (overrides = {}) =>
     contactOptions: [],
     stackLabels: { react: "React", vercel: "Vercel" },
     linkLabels: { web: "Website", repo: "GitHub" },
+    badges: { site: "site.svg", resume: "resume.svg", web: "web.svg", repo: "repo.svg", email: "email.svg", phone: "phone.svg" },
     siteUrl: "https://me.example",
     resumeUrl: "https://resume.example",
     ...overrides,
@@ -43,18 +44,18 @@ describe("renderReadme", () => {
   it("leaves out contact options marked off GitHub", () => {
     const readme = render({
       contactOptions: [
-        { title: "Email", cta: "Write", href: "mailto:me@example.com", onGitHub: true },
-        { title: "Phone", cta: "Call", href: "tel:+15550000000", onGitHub: false },
+        { type: "email", title: "Email", cta: "Write", href: "mailto:me@example.com", onGitHub: true },
+        { type: "phone", title: "Phone", cta: "Call", href: "tel:+15550000000", onGitHub: false },
       ],
     });
-    expect(readme).toContain("[Email](mailto:me@example.com): Write");
+    expect(readme).toContain("[![Email](email.svg)](mailto:me@example.com)");
     expect(readme).not.toContain("tel:+15550000000");
   });
 
-  it("titles a project with its first link and lists every link by label", () => {
+  it("titles a project with its first link and lists every link as a badge", () => {
     const readme = render();
     expect(readme).toContain("### [Thing](https://thing.example)");
-    expect(readme).toContain("[Website](https://thing.example) · [GitHub](https://github.com/me/thing)");
+    expect(readme).toContain("[![Website](web.svg)](https://thing.example) [![GitHub](repo.svg)](https://github.com/me/thing)");
   });
 
   it("names the stack by label", () => {

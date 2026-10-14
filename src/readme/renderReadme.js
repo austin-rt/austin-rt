@@ -4,8 +4,9 @@ export const GENERATED_NOTICE =
   "<!-- Generated from src/data by scripts/readme/generate.mjs. Edit the site data, not this file. -->";
 
 const link = (label, href) => `[${label}](${href})`;
+const badgeLink = (label, src, href) => `[![${label}](${src})](${href})`;
 
-const renderHero = ({ hero, banner, siteUrl, resumeUrl }) => [
+const renderHero = ({ hero, banner, badges, siteUrl, resumeUrl }) => [
   '<div align="center">',
   "",
   `<img src="${banner}" alt="${hero.name}" />`,
@@ -16,14 +17,14 @@ const renderHero = ({ hero, banner, siteUrl, resumeUrl }) => [
   "",
   hero.role,
   "",
-  [link(new URL(siteUrl).host, siteUrl), link("Download Resume", resumeUrl)].join(" · "),
+  [badgeLink(new URL(siteUrl).host, badges.site, siteUrl), badgeLink("Download Resume", badges.resume, resumeUrl)].join(" "),
   "",
   "</div>",
 ];
 
 const renderAbout = ({ about }) => [`## ${about.title}`, "", about.paragraphs.join("\n\n")];
 
-const renderProject = (project, { stackLabels, linkLabels }) => {
+const renderProject = (project, { stackLabels, linkLabels, badges }) => {
   const primary = project.links[0];
   const lines = [`### ${link(project.name, primary.href)}`, ""];
   if (project.image) {
@@ -36,7 +37,7 @@ const renderProject = (project, { stackLabels, linkLabels }) => {
     "",
     `Built with ${project.stack.map((slug) => stackLabels[slug]).join(" · ")}`,
     "",
-    project.links.map(({ type, href }) => link(linkLabels[type], href)).join(" · "),
+    project.links.map(({ type, href }) => badgeLink(linkLabels[type], badges[type], href)).join(" "),
   );
   return lines.join("\n");
 };
@@ -59,13 +60,13 @@ const renderOpenSource = ({ sections, cards }) => [
   cards.map(renderContribution).join("\n"),
 ];
 
-const renderContact = ({ sections, contactOptions }) => [
+const renderContact = ({ sections, contactOptions, badges }) => [
   `## ${sections.contact.title}`,
   "",
   contactOptions
     .filter((option) => option.onGitHub)
-    .map(({ title, cta, href }) => `${link(title, href)}: ${cta}`)
-    .join("<br />\n"),
+    .map(({ type, title, href }) => badgeLink(title, badges[type], href))
+    .join(" "),
 ];
 
 export const renderReadme = (content) =>
