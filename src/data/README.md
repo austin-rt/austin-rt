@@ -46,7 +46,9 @@ Append an object to `openSource.json`. Order is display order.
 - `product`: the part of it you worked on (`Browser Extension`)
 - `summary`: one sentence
 - `language`: the main language of the change
-- `href`: the pull request link, `https://github.com/owner/repo/pull/123`
+- `href`: the pull request link, `https://github.com/owner/repo/pull/123`. When the PR closed without
+  merging, the branch on your fork instead, `https://github.com/austin-rt/repo/tree/branch`: the card
+  then shows the fork, a Fork badge and no status
 
 The card shows the repo from `href`. On page load the site asks the GitHub search API for
 austin-rt's PRs in those repos (see `contributionStatus.js`) and gives each card its PR's status

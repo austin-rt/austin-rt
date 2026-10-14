@@ -1,5 +1,5 @@
 import { PR_LABEL, PR_STATE } from "../data/contributionStatus";
-import { renderReadme } from "./renderReadme";
+import { FORK_LABEL, renderReadme } from "./renderReadme";
 
 const project = (overrides = {}) => ({
   name: "Thing",
@@ -92,5 +92,13 @@ describe("renderReadme", () => {
     const merged = render({ cards: [card({ state: PR_STATE.merged, date: "2026-10" })] });
     expect(merged).toContain(`https://opengraph.githubassets.com/${PR_STATE.merged}/o/r/pull/1`);
     expect(render()).toContain("https://opengraph.githubassets.com/pr/o/r/pull/1");
+  });
+
+  it("shows a contribution on a fork's branch with the fork's preview and a fork badge linked to the branch", () => {
+    const href = "https://github.com/me/fork/tree/feature/x";
+    const readme = render({ cards: [card({ href, repo: "me/fork", number: undefined, branch: "feature/x" })] });
+    expect(readme).toContain(`[![${FORK_LABEL}](unknown:${FORK_LABEL})](${href})`);
+    expect(readme).toContain('src="https://opengraph.githubassets.com/fork/me/fork"');
+    expect(readme).not.toContain("pull/undefined");
   });
 });

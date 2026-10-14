@@ -11,7 +11,7 @@
     "product": "Browser Extension",
     "summary": "A keyboard shortcut that cycles through logged-in accounts in the browser extension, opening unlock when the next account is locked.",
     "language": "TypeScript",
-    "href": "https://github.com/bitwarden/clients/pull/23626"
+    "href": "https://github.com/austin-rt/clients/tree/feature/switch-account-command"
   },
   {
     "name": "Rocket.Chat",

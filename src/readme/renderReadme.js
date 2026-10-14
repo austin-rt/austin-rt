@@ -48,20 +48,30 @@ const renderProjects = ({ sections, projects, ...labels }) => [
   projects.map((project) => renderProject(project, labels)).join("\n\n"),
 ];
 
-// GitHub's social preview card for the PR. The first path segment only busts
-// caches, so it carries the state and the image refreshes when the PR merges.
-const previewImage = (card) =>
-  `https://opengraph.githubassets.com/${card.state ?? "pr"}/${card.repo}/pull/${card.number}`;
+export const FORK_LABEL = "Fork";
 
-// badges.pr[state] turns a label into that state's badge. A card with no state
-// means GitHub couldn't be reached; it gets a plain "Pull Request" badge.
+// GitHub's social preview card for the PR, or for the fork when the card links
+// a branch. The first path segment only busts caches, so it carries the state
+// and the image refreshes when the PR merges.
+const previewImage = (card) =>
+  card.branch
+    ? `https://opengraph.githubassets.com/fork/${card.repo}`
+    : `https://opengraph.githubassets.com/${card.state ?? "pr"}/${card.repo}/pull/${card.number}`;
+
+// badges.pr[state] turns a label into that state's badge. A PR card with no
+// state means GitHub couldn't be reached; it gets a plain "Pull Request" badge.
 const renderContribution = (card, badges) => {
-  const label = card.state ? `${PR_LABEL[card.state]} ${formatMonth(card.date)}` : "Pull Request";
+  const label = card.state
+    ? `${PR_LABEL[card.state]} ${formatMonth(card.date)}`
+    : card.branch
+      ? FORK_LABEL
+      : "Pull Request";
   const status = badgeLink(label, badges.pr[card.state ?? "unknown"](label), card.href);
+  const alt = card.branch ? `${card.repo} branch ${card.branch}` : `${card.repo} pull request ${card.number}`;
   return [
     `### ${link(card.name, card.href)}`,
     "",
-    `<a href="${card.href}"><img src="${previewImage(card)}" width="600" alt="${card.repo} pull request ${card.number}" /></a>`,
+    `<a href="${card.href}"><img src="${previewImage(card)}" width="600" alt="${alt}" /></a>`,
     "",
     `**${card.product}**`,
     "",

@@ -1,5 +1,6 @@
 // Live status for the Open Source cards. Each card is a fixed PR link in
-// openSource.json; GitHub supplies that PR's state and date on page load.
+// openSource.json; GitHub supplies that PR's state and date on page load. A card
+// linked to a fork's branch has no PR, so it gets neither.
 
 export const GITHUB_USER = "austin-rt";
 const SEARCH_URL = "https://api.github.com/search/issues";
@@ -30,11 +31,15 @@ export const formatMonth = (yyyyMm) => {
 };
 
 const PULL_URL = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/pull\/(\d+)$/;
+// Work whose PR closed without merging is linked by its branch on the fork.
+const BRANCH_URL = /^https:\/\/github\.com\/([^/]+\/[^/]+)\/tree\/(.+)$/;
 
-export const parsePullUrl = (href) => {
-  const match = href.match(PULL_URL);
-  if (!match) throw new Error(`Not a GitHub pull request link: ${href}`);
-  return { repo: match[1], number: Number(match[2]) };
+export const parseLink = (href) => {
+  const pull = href.match(PULL_URL);
+  if (pull) return { repo: pull[1], number: Number(pull[2]) };
+  const branch = href.match(BRANCH_URL);
+  if (branch) return { repo: branch[1], branch: branch[2] };
+  throw new Error(`Not a GitHub pull request or branch link: ${href}`);
 };
 
 const repoOf = (item) =>
@@ -51,7 +56,7 @@ export const stateOf = (item) => {
 // PR isn't in the result keeps its link and shows no status or date.
 export const cardsFrom = (contributions, items) =>
   contributions.map((entry) => {
-    const card = { ...entry, ...parsePullUrl(entry.href) };
+    const card = { ...entry, ...parseLink(entry.href) };
     const pull = items?.find(
       (item) =>
         item.number === card.number && repoOf(item) === card.repo.toLowerCase(),
@@ -65,7 +70,8 @@ export const cardsFrom = (contributions, items) =>
   });
 
 export const searchQuery = (contributions) => {
-  const repos = new Set(contributions.map((entry) => parsePullUrl(entry.href).repo));
+  const pulls = contributions.map((entry) => parseLink(entry.href)).filter((link) => link.number);
+  const repos = new Set(pulls.map((link) => link.repo));
   return ["is:pr", `author:${GITHUB_USER}`, ...[...repos].map((repo) => `repo:${repo}`)].join(" ");
 };
 

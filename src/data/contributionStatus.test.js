@@ -5,7 +5,7 @@ import {
   cardsFrom,
   fetchPullRequests,
   formatMonth,
-  parsePullUrl,
+  parseLink,
   searchQuery,
   stateOf,
 } from "./contributionStatus";
@@ -22,21 +22,28 @@ const pull = ({ repo = "owner/repo", number = 7, state = "open", draft = false, 
 const entry = (href = "https://github.com/owner/repo/pull/7") => ({ name: "Name", href });
 
 describe("openSource.json", () => {
-  it.each(contributions.map((c) => [c.name, c.href]))("%s links to a pull request", (_, href) => {
-    expect(() => parsePullUrl(href)).not.toThrow();
+  it.each(contributions.map((c) => [c.name, c.href]))("%s links to a pull request or a fork's branch", (_, href) => {
+    expect(() => parseLink(href)).not.toThrow();
   });
 });
 
-describe("parsePullUrl", () => {
+describe("parseLink", () => {
   it("reads the repo and PR number from a pull request link", () => {
-    expect(parsePullUrl("https://github.com/RocketChat/Apps.Github22/pull/159")).toEqual({
+    expect(parseLink("https://github.com/RocketChat/Apps.Github22/pull/159")).toEqual({
       repo: "RocketChat/Apps.Github22",
       number: 159,
     });
   });
 
-  it("rejects a link that isn't a pull request", () => {
-    expect(() => parsePullUrl("https://github.com/owner/repo/issues/7")).toThrow("owner/repo/issues/7");
+  it("reads the fork and the whole branch name from a branch link", () => {
+    expect(parseLink("https://github.com/austin-rt/clients/tree/feature/switch-account-command")).toEqual({
+      repo: "austin-rt/clients",
+      branch: "feature/switch-account-command",
+    });
+  });
+
+  it("rejects a link that is neither a pull request nor a branch", () => {
+    expect(() => parseLink("https://github.com/owner/repo/issues/7")).toThrow("owner/repo/issues/7");
   });
 });
 
@@ -94,6 +101,12 @@ describe("searchQuery", () => {
     expect(
       searchQuery([entry("https://github.com/a/b/pull/1"), entry("https://github.com/a/b/pull/2"), entry("https://github.com/c/d/pull/3")]),
     ).toBe(`is:pr author:${GITHUB_USER} repo:a/b repo:c/d`);
+  });
+
+  it("leaves a fork's branch out, since it has no PR to look up", () => {
+    expect(searchQuery([entry("https://github.com/a/b/pull/1"), entry("https://github.com/me/fork/tree/feature/x")])).toBe(
+      `is:pr author:${GITHUB_USER} repo:a/b`,
+    );
   });
 });
 
